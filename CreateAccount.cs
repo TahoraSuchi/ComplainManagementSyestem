@@ -88,7 +88,6 @@ namespace ComplainManagementSyestem
             }
         }
 
-        // Back button – return to login
         private void button2_Click(object sender, EventArgs e)
         {
             Login login = new Login();
