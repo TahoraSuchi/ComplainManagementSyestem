@@ -46,7 +46,12 @@ namespace ComplainManagementSyestem
                         MessageBox.Show("Login Successful!",
                                         "Welcome", MessageBoxButtons.OK,
                                         MessageBoxIcon.Information);
-                    
+
+                       
+                        UserPage userForm = new UserPage();
+                        userForm.Show();
+
+                        this.Hide();
                     }
                     else
                     {
@@ -66,17 +71,13 @@ namespace ComplainManagementSyestem
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-          
             textBox2.UseSystemPasswordChar = !checkBox1.Checked;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
             CreateAccount regForm = new CreateAccount();
             regForm.Show();
-
-         
             this.Hide();
         }
     }
