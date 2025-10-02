@@ -23,7 +23,7 @@ namespace ComplainManagementSyestem
   
         private void button6_Click(object sender, EventArgs e)
         {
-            AddComplain addComplainForm = new AddComplain(); // normal form
+            AddComplain addComplainForm = new AddComplain(); 
             addComplainForm.Show();
             this.Hide();
         }

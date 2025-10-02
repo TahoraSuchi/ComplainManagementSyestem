@@ -23,16 +23,16 @@ namespace ComplainManagementSyestem
             this.Hide();
         }
 
-        // Button 2: Submit feedback to the database
+      
         private void button2_Click(object sender, EventArgs e)
         {
-            // Get inputs from the form controls
-            string complainIdText = textBox1.Text.Trim();  // Complaint ID from TextBox
-            string userIdText = textBox2.Text.Trim();      // User ID from TextBox
-            string comment = textBox4.Text.Trim();         // Feedback comment from TextBox
-            string ratingText = comboBox1.SelectedItem?.ToString();  // Rating from ComboBox
+            
+            string complainIdText = textBox1.Text.Trim(); 
+            string userIdText = textBox2.Text.Trim();     
+            string comment = textBox4.Text.Trim();         
+            string ratingText = comboBox1.SelectedItem?.ToString();  
+          
 
-            // Validate inputs
             if (string.IsNullOrWhiteSpace(complainIdText) || string.IsNullOrWhiteSpace(userIdText) ||
                 string.IsNullOrWhiteSpace(comment) || string.IsNullOrWhiteSpace(ratingText))
             {
@@ -40,7 +40,7 @@ namespace ComplainManagementSyestem
                 return;
             }
 
-            // Convert text inputs to the appropriate types
+          
             int complainId, userId, rating;
             if (!int.TryParse(complainIdText, out complainId) || !int.TryParse(userIdText, out userId) || !int.TryParse(ratingText, out rating))
             {
@@ -48,14 +48,13 @@ namespace ComplainManagementSyestem
                 return;
             }
 
-            // Check rating range (1 to 5)
+           
             if (rating < 1 || rating > 5)
             {
                 MessageBox.Show("Rating must be between 1 and 5.", "Rating Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Insert feedback into the database
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -67,7 +66,7 @@ namespace ComplainManagementSyestem
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
-                        // Add parameters to prevent SQL injection
+                    
                         cmd.Parameters.AddWithValue("@ComplainID", complainId);
                         cmd.Parameters.AddWithValue("@UserID", userId);
                         cmd.Parameters.AddWithValue("@Rating", rating);
@@ -78,11 +77,11 @@ namespace ComplainManagementSyestem
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Feedback submitted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            // Clear the form after successful submission
-                            textBox1.Clear();  // Clear Complaint ID
-                            textBox2.Clear();  // Clear User ID
-                            textBox4.Clear();  // Clear Comment
-                            comboBox1.SelectedIndex = -1;  // Clear the selected rating
+                            
+                            textBox1.Clear();  
+                            textBox2.Clear();  
+                            textBox4.Clear();  
+                            comboBox1.SelectedIndex = -1;  
                         }
                         else
                         {
