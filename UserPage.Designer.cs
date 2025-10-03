@@ -22,12 +22,10 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
+        
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserPage));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -37,30 +35,33 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(102, 232);
+            this.button1.Location = new System.Drawing.Point(98, 210);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(174, 57);
             this.button1.TabIndex = 0;
             this.button1.Text = "Submit Complain";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(346, 232);
+            this.button2.Location = new System.Drawing.Point(342, 210);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(174, 57);
             this.button2.TabIndex = 1;
             this.button2.Text = "Complain History";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(596, 232);
+            this.button3.Location = new System.Drawing.Point(592, 210);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(174, 57);
             this.button3.TabIndex = 2;
             this.button3.Text = "Give Feedback";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -70,6 +71,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Logout";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -79,12 +81,15 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Profile";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button6_Click);
             // 
             // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 600);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(907, 496);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
