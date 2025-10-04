@@ -5,48 +5,55 @@ namespace ComplainManagementSyestem
 {
     public partial class UserPage : Form
     {
-        private int loggedInUserId = 1; 
+        private int loggedInUserID;
 
-        public UserPage()
+        public UserPage(int userId)
         {
             InitializeComponent();
+            loggedInUserID = userId;
         }
 
-       
         private void button1_Click(object sender, EventArgs e)
         {
-            AddComplain addComplainForm = new AddComplain(); 
+            AddComplain addComplainForm = new AddComplain(loggedInUserID);
             addComplainForm.Show();
             this.Hide();
         }
 
-  
         private void button6_Click(object sender, EventArgs e)
         {
-            AddComplain addComplainForm = new AddComplain(); 
+            AddComplain addComplainForm = new AddComplain(loggedInUserID);
             addComplainForm.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ComplainHistory complainHistoryForm = new ComplainHistory();
+            
+            ComplainHistory complainHistoryForm = new ComplainHistory(loggedInUserID);
             complainHistoryForm.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Feedback feedbackForm = new Feedback();
+        
+            Feedback feedbackForm = new Feedback(loggedInUserID);
             feedbackForm.Show();
             this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+         
             Login loginForm = new Login();
             loginForm.Show();
             this.Hide();
+        }
+
+        private void UserPage_Load(object sender, EventArgs e)
+        {
+         
         }
     }
 }

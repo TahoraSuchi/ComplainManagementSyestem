@@ -8,7 +8,15 @@ namespace ComplainManagementSyestem
 {
     public partial class Feedback : Form
     {
-        
+
+        private int loggedInUserID;
+
+        public Feedback(int userId)
+        {
+            InitializeComponent();
+            loggedInUserID = userId;
+        }
+
         string connectionString = ConfigurationManager.ConnectionStrings["UserDb"].ConnectionString;
 
         public Feedback()
@@ -18,7 +26,7 @@ namespace ComplainManagementSyestem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UserPage userPage = new UserPage();
+            UserPage userPage = new UserPage(loggedInUserID);
             userPage.Show();
             this.Hide();
         }

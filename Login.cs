@@ -7,6 +7,8 @@ namespace ComplainManagementSyestem
 {
     public partial class Login : Form
     {
+        string connectionString = ConfigurationManager.ConnectionStrings["UserDb"].ConnectionString;
+
         public Login()
         {
             InitializeComponent();
@@ -19,97 +21,55 @@ namespace ComplainManagementSyestem
 
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Please enter both username and password.",
-                                "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter both username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
-            string connectionString = ConfigurationManager
-                .ConnectionStrings["UserDb"]
-                .ConnectionString;
-
-            string query = "SELECT Role FROM [User] WHERE Username = @user AND Password = @pass";
 
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
-                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@user", username);
-                    cmd.Parameters.AddWithValue("@pass", password);
-
                     conn.Open();
-                    object result = cmd.ExecuteScalar();
 
-                    if (result != null)
+                    string query = "SELECT UserID, Role FROM [User] WHERE Username=@Username AND Password=@Password";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
+                        cmd.Parameters.AddWithValue("@Username", username);
+                        cmd.Parameters.AddWithValue("@Password", password);
 
-                        MessageBox.Show("Login Successful!",
-                                        "Welcome", MessageBoxButtons.OK,
-                                        MessageBoxIcon.Information);
+                        SqlDataReader reader = cmd.ExecuteReader();
 
-                       
-                        UserPage userForm = new UserPage();
-                        userForm.Show();
-
-
-                        string role = result.ToString();
-
-                        MessageBox.Show("Login Successful!", "Welcome",
-                                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                      
-                        Form nextForm = null;
-
-                        switch (role.ToLower())
+                        if (reader.Read())
                         {
-                            case "user":
-                                nextForm = new UserPage();
-                                break;
-                            case "police":
-                                nextForm = new PolicePage();
-                                break;
-                            case "admin":
-                                nextForm = new AdminPage();
-                                break;
-                            default:
-                                MessageBox.Show("Unknown role: " + role,
-                                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                return;
+                            int userId = Convert.ToInt32(reader["UserID"]);
+                            string role = reader["Role"].ToString();
+
+                            MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            if (role == "User")
+                            {
+                                UserPage userPage = new UserPage(userId);
+                                userPage.Show();
+                                this.Hide();
+                            }
+                            else if (role == "Admin")
+                            {
+                                AdminPage adminPage = new AdminPage();
+                                adminPage.Show();
+                                this.Hide();
+                            }
                         }
-
-                        nextForm.Show();
-
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid username or password.",
-                                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Database error: " + ex.Message,
-                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error during login: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-
-            textBox2.UseSystemPasswordChar = !checkBox1.Checked;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-    
-
-            CreateAccount regForm = new CreateAccount();
-            regForm.Show();
-            this.Hide();
         }
     }
 }

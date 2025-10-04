@@ -5,6 +5,14 @@ namespace ComplainManagementSyestem
 {
     public partial class ComplainHistory : Form
     {
+
+        private int loggedInUserID;
+
+        public ComplainHistory(int userId)
+        {
+            InitializeComponent();
+            loggedInUserID = userId;
+        }
         public ComplainHistory()
         {
             InitializeComponent();
@@ -18,7 +26,7 @@ namespace ComplainManagementSyestem
        
         private void button1_Click(object sender, EventArgs e)
         {
-            UserPage userPage = new UserPage();
+            UserPage userPage = new UserPage(loggedInUserID);
             userPage.Show();
             this.Hide(); 
         }

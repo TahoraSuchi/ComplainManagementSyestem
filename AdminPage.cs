@@ -23,5 +23,20 @@ namespace ComplainManagementSyestem
             loginForm.Show();
             this.Hide();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AddPolice add = new AddPolice();
+            add.Show();
+            this.Hide();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Update update = new Update();
+            update.Show();
+            this.Hide();
+        }
     }
 }

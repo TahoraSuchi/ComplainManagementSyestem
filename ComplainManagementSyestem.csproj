@@ -171,6 +171,12 @@
     <Compile Include="AddComplain.Designer.cs">
       <DependentUpon>AddComplain.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddPolice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPolice.Designer.cs">
+      <DependentUpon>AddPolice.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ComplainManagementSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComplainManagementSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplainManagementSystemDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="CreateAccount.cs">
       <SubType>Form</SubType>
@@ -224,6 +235,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +261,17 @@
     <None Include="ComplainManagementSystemDataSet.xss">
       <DependentUpon>ComplainManagementSystemDataSet.xsd</DependentUpon>
     </None>
+    <None Include="ComplainManagementSystemDataSet1.xsc">
+      <DependentUpon>ComplainManagementSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ComplainManagementSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComplainManagementSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ComplainManagementSystemDataSet1.xss">
+      <DependentUpon>ComplainManagementSystemDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -253,6 +281,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AddComplain.resx">
       <DependentUpon>AddComplain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPolice.resx">
+      <DependentUpon>AddPolice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminPage.resx">
       <DependentUpon>AdminPage.cs</DependentUpon>
@@ -275,6 +306,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserPage.resx">
       <DependentUpon>UserPage.cs</DependentUpon>

@@ -5,36 +5,31 @@ using System.Windows.Forms;
 
 namespace ComplainManagementSyestem
 {
-    public partial class CreateAccount : Form
+    public partial class AddPolice : Form
     {
-        public CreateAccount()
+        public AddPolice()
         {
             InitializeComponent();
         }
 
-
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!checkBox1.Checked)
-            {
-                MessageBox.Show("Please agree to the terms and conditions before creating an account.",
-                                "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             string name = textBox1.Text.Trim();
             string email = textBox2.Text.Trim();
             string username = textBox3.Text.Trim();
             string password = textBox4.Text.Trim();
-            string role = "User";  // Fixed Role
+            string role = comboBox1.Text.Trim();
 
+        
             if (string.IsNullOrWhiteSpace(name) ||
                 string.IsNullOrWhiteSpace(email) ||
                 string.IsNullOrWhiteSpace(username) ||
-                string.IsNullOrWhiteSpace(password))
+                string.IsNullOrWhiteSpace(password) ||
+                string.IsNullOrWhiteSpace(role))
             {
                 MessageBox.Show("All fields are required.",
-                                "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                "Warning", MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
                 return;
             }
 
@@ -55,20 +50,24 @@ namespace ComplainManagementSyestem
                     cmd.Parameters.AddWithValue("@mail", email);
                     cmd.Parameters.AddWithValue("@user", username);
                     cmd.Parameters.AddWithValue("@pass", password);
-                    cmd.Parameters.AddWithValue("@role", role);  // Always "User"
+                    cmd.Parameters.AddWithValue("@role", role);
 
                     conn.Open();
                     int rows = cmd.ExecuteNonQuery();
 
                     if (rows > 0)
                     {
-                        MessageBox.Show("Account created successfully!",
+                     
+                        MessageBox.Show($"{role} account created successfully!",
                                         "Success", MessageBoxButtons.OK,
                                         MessageBoxIcon.Information);
 
-                        Login login = new Login();
-                        login.Show();
-                        this.Hide();
+                   
+                        textBox1.Clear();
+                        textBox2.Clear();
+                        textBox3.Clear();
+                        textBox4.Clear();
+                        comboBox1.SelectedIndex = -1;
                     }
                     else
                     {
@@ -86,10 +85,11 @@ namespace ComplainManagementSyestem
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
+            AdminPage admin = new AdminPage();
+            admin.Show();
             this.Hide();
         }
     }

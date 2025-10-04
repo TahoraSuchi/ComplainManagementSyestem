@@ -58,6 +58,7 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "Update Complain";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -104,8 +105,9 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(170, 54);
             this.button6.TabIndex = 12;
-            this.button6.Text = "Add Police";
+            this.button6.Text = "Add Police And Admin";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
