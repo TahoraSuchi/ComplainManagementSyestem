@@ -20,12 +20,7 @@ namespace ComplainManagementSyestem
             this.Hide();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            AddComplain addComplainForm = new AddComplain(loggedInUserID);
-            addComplainForm.Show();
-            this.Hide();
-        }
+      
 
         private void button2_Click(object sender, EventArgs e)
         {

@@ -305,3 +305,5 @@ D:\52673\ComplainManagementSyestem-main\obj\Debug\ComplainManagementSyestem.cspr
 D:\52673\ComplainManagementSyestem-main\obj\Debug\Complain.483CE20B.Up2Date
 D:\52673\ComplainManagementSyestem-main\obj\Debug\ComplainManagementSyestem.exe
 D:\52673\ComplainManagementSyestem-main\obj\Debug\ComplainManagementSyestem.pdb
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.AddPolice.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.Update.resources
