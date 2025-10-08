@@ -26,7 +26,7 @@ namespace ComplainManagementSyestem
             string email = textBox2.Text.Trim();
             string username = textBox3.Text.Trim();
             string password = textBox4.Text.Trim();
-            string role = "User";  // Fixed Role
+            string role = "User"; 
 
             if (string.IsNullOrWhiteSpace(name) ||
                 string.IsNullOrWhiteSpace(email) ||
@@ -55,7 +55,7 @@ namespace ComplainManagementSyestem
                     cmd.Parameters.AddWithValue("@mail", email);
                     cmd.Parameters.AddWithValue("@user", username);
                     cmd.Parameters.AddWithValue("@pass", password);
-                    cmd.Parameters.AddWithValue("@role", role);  // Always "User"
+                    cmd.Parameters.AddWithValue("@role", role);  
 
                     conn.Open();
                     int rows = cmd.ExecuteNonQuery();

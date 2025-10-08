@@ -58,6 +58,14 @@ namespace ComplainManagementSyestem
                                 adminPage.Show();
                                 this.Hide();
                             }
+
+                            else if (role == "Police")
+                            {
+                                PolicePage PolicePage = new PolicePage();
+                                PolicePage.Show();
+                                this.Hide();
+                            }
+                            
                         }
                         else
                         {
@@ -70,6 +78,14 @@ namespace ComplainManagementSyestem
             {
                 MessageBox.Show($"Error during login: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+     
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            CreateAccount createAccount = new CreateAccount();
+            createAccount.Show();
+            this.Hide();
         }
     }
 }

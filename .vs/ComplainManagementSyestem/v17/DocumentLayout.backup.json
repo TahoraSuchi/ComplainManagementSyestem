@@ -1,34 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Project\\ComplainManagementSyestem\\",
+  "WorkspaceRootPath": "D:\\REDU\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\project\\complainmanagementsyestem\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|d:\\redu\\adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|d:\\redu\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Project\\ComplainManagementSyestem\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|D:\\REDU\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Project\\ComplainManagementSyestem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|D:\\REDU\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Project\\ComplainManagementSyestem\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Project\\ComplainManagementSyestem\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|D:\\REDU\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Project\\ComplainManagementSyestem\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Project\\ComplainManagementSyestem\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|D:\\REDU\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,75 +34,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserPage.cs [Design]",
-              "DocumentMoniker": "F:\\Project\\ComplainManagementSyestem\\UserPage.cs",
-              "RelativeDocumentMoniker": "UserPage.cs",
-              "ToolTip": "F:\\Project\\ComplainManagementSyestem\\UserPage.cs [Design]",
-              "RelativeToolTip": "UserPage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T12:14:14.926Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateAccount.cs",
-              "DocumentMoniker": "F:\\Project\\ComplainManagementSyestem\\CreateAccount.cs",
-              "RelativeDocumentMoniker": "CreateAccount.cs",
-              "ToolTip": "F:\\Project\\ComplainManagementSyestem\\CreateAccount.cs",
-              "RelativeToolTip": "CreateAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AdminPage.cs [Design]",
+              "DocumentMoniker": "D:\\REDU\\AdminPage.cs",
+              "RelativeDocumentMoniker": "AdminPage.cs",
+              "ToolTip": "D:\\REDU\\AdminPage.cs [Design]",
+              "RelativeToolTip": "AdminPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T11:36:12.603Z"
+              "WhenOpened": "2025-10-08T13:48:34.904Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateAccount.cs",
+              "DocumentMoniker": "D:\\REDU\\CreateAccount.cs",
+              "RelativeDocumentMoniker": "CreateAccount.cs",
+              "ToolTip": "D:\\REDU\\CreateAccount.cs",
+              "RelativeToolTip": "CreateAccount.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAuwBEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:36:12.603Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "CreateAccount.cs [Design]",
-              "DocumentMoniker": "F:\\Project\\ComplainManagementSyestem\\CreateAccount.cs",
+              "DocumentMoniker": "D:\\REDU\\CreateAccount.cs",
               "RelativeDocumentMoniker": "CreateAccount.cs",
-              "ToolTip": "F:\\Project\\ComplainManagementSyestem\\CreateAccount.cs [Design]",
+              "ToolTip": "D:\\REDU\\CreateAccount.cs [Design]",
               "RelativeToolTip": "CreateAccount.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T11:34:43.837Z"
+              "WhenOpened": "2025-09-18T11:34:43.837Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.config",
-              "DocumentMoniker": "F:\\Project\\ComplainManagementSyestem\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "F:\\Project\\ComplainManagementSyestem\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-09-18T11:12:48.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Login.cs",
-              "DocumentMoniker": "F:\\Project\\ComplainManagementSyestem\\Login.cs",
+              "DocumentMoniker": "D:\\REDU\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "F:\\Project\\ComplainManagementSyestem\\Login.cs",
+              "ToolTip": "D:\\REDU\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAqwEAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T18:41:49.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Login.cs [Design]",
-              "DocumentMoniker": "F:\\Project\\ComplainManagementSyestem\\Login.cs",
+              "DocumentMoniker": "D:\\REDU\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "F:\\Project\\ComplainManagementSyestem\\Login.cs [Design]",
+              "ToolTip": "D:\\REDU\\Login.cs [Design]",
               "RelativeToolTip": "Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T18:23:02.939Z",
@@ -114,16 +108,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "F:\\Project\\ComplainManagementSyestem\\Program.cs",
+              "DocumentMoniker": "D:\\REDU\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\Project\\ComplainManagementSyestem\\Program.cs",
+              "ToolTip": "D:\\REDU\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T18:21:19.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T18:21:19.548Z"
             }
           ]
         }
