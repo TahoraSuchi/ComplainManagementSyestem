@@ -20,6 +20,8 @@ namespace ComplainManagementSyestem
 
         private void ComplainHistory_Load(object sender, EventArgs e)
         {
+            
+            this.complainHistoryTableAdapter1.Fill(this.complainManagementSystemDataSet3.ComplainHistory);
             this.complainHistoryTableAdapter.Fill(this.complainManagementSystemDataSet.ComplainHistory);
         }
 

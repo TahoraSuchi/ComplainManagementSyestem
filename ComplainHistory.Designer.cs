@@ -30,18 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.complainIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oldStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.newStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.changeDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.complainHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.complainManagementSystemDataSet = new ComplainManagementSyestem.ComplainManagementSystemDataSet();
             this.button1 = new System.Windows.Forms.Button();
             this.complainHistoryTableAdapter = new ComplainManagementSyestem.ComplainManagementSystemDataSetTableAdapters.ComplainHistoryTableAdapter();
             this.button2 = new System.Windows.Forms.Button();
-            this.complainIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oldStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.newStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.changeDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.complainManagementSystemDataSet3 = new ComplainManagementSyestem.ComplainManagementSystemDataSet3();
+            this.complainHistoryBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.complainHistoryTableAdapter1 = new ComplainManagementSyestem.ComplainManagementSystemDataSet3TableAdapters.ComplainHistoryTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainHistoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainHistoryBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -53,13 +58,45 @@
             this.oldStatusDataGridViewTextBoxColumn,
             this.newStatusDataGridViewTextBoxColumn,
             this.changeDateDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.complainHistoryBindingSource;
+            this.dataGridView1.DataSource = this.complainHistoryBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(171, 87);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(577, 317);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // complainIDDataGridViewTextBoxColumn
+            // 
+            this.complainIDDataGridViewTextBoxColumn.DataPropertyName = "ComplainID";
+            this.complainIDDataGridViewTextBoxColumn.HeaderText = "ComplainID";
+            this.complainIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.complainIDDataGridViewTextBoxColumn.Name = "complainIDDataGridViewTextBoxColumn";
+            this.complainIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // oldStatusDataGridViewTextBoxColumn
+            // 
+            this.oldStatusDataGridViewTextBoxColumn.DataPropertyName = "OldStatus";
+            this.oldStatusDataGridViewTextBoxColumn.HeaderText = "OldStatus";
+            this.oldStatusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.oldStatusDataGridViewTextBoxColumn.Name = "oldStatusDataGridViewTextBoxColumn";
+            this.oldStatusDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // newStatusDataGridViewTextBoxColumn
+            // 
+            this.newStatusDataGridViewTextBoxColumn.DataPropertyName = "NewStatus";
+            this.newStatusDataGridViewTextBoxColumn.HeaderText = "NewStatus";
+            this.newStatusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.newStatusDataGridViewTextBoxColumn.Name = "newStatusDataGridViewTextBoxColumn";
+            this.newStatusDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // changeDateDataGridViewTextBoxColumn
+            // 
+            this.changeDateDataGridViewTextBoxColumn.DataPropertyName = "ChangeDate";
+            this.changeDateDataGridViewTextBoxColumn.HeaderText = "ChangeDate";
+            this.changeDateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.changeDateDataGridViewTextBoxColumn.Name = "changeDateDataGridViewTextBoxColumn";
+            this.changeDateDataGridViewTextBoxColumn.Width = 125;
             // 
             // complainHistoryBindingSource
             // 
@@ -95,37 +132,19 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // complainIDDataGridViewTextBoxColumn
+            // complainManagementSystemDataSet3
             // 
-            this.complainIDDataGridViewTextBoxColumn.DataPropertyName = "ComplainID";
-            this.complainIDDataGridViewTextBoxColumn.HeaderText = "ComplainID";
-            this.complainIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.complainIDDataGridViewTextBoxColumn.Name = "complainIDDataGridViewTextBoxColumn";
-            this.complainIDDataGridViewTextBoxColumn.Width = 125;
+            this.complainManagementSystemDataSet3.DataSetName = "ComplainManagementSystemDataSet3";
+            this.complainManagementSystemDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // oldStatusDataGridViewTextBoxColumn
+            // complainHistoryBindingSource1
             // 
-            this.oldStatusDataGridViewTextBoxColumn.DataPropertyName = "OldStatus";
-            this.oldStatusDataGridViewTextBoxColumn.HeaderText = "OldStatus";
-            this.oldStatusDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.oldStatusDataGridViewTextBoxColumn.Name = "oldStatusDataGridViewTextBoxColumn";
-            this.oldStatusDataGridViewTextBoxColumn.Width = 125;
+            this.complainHistoryBindingSource1.DataMember = "ComplainHistory";
+            this.complainHistoryBindingSource1.DataSource = this.complainManagementSystemDataSet3;
             // 
-            // newStatusDataGridViewTextBoxColumn
+            // complainHistoryTableAdapter1
             // 
-            this.newStatusDataGridViewTextBoxColumn.DataPropertyName = "NewStatus";
-            this.newStatusDataGridViewTextBoxColumn.HeaderText = "NewStatus";
-            this.newStatusDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.newStatusDataGridViewTextBoxColumn.Name = "newStatusDataGridViewTextBoxColumn";
-            this.newStatusDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // changeDateDataGridViewTextBoxColumn
-            // 
-            this.changeDateDataGridViewTextBoxColumn.DataPropertyName = "ChangeDate";
-            this.changeDateDataGridViewTextBoxColumn.HeaderText = "ChangeDate";
-            this.changeDateDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.changeDateDataGridViewTextBoxColumn.Name = "changeDateDataGridViewTextBoxColumn";
-            this.changeDateDataGridViewTextBoxColumn.Width = 125;
+            this.complainHistoryTableAdapter1.ClearBeforeFill = true;
             // 
             // ComplainHistory
             // 
@@ -141,6 +160,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainHistoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainHistoryBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -157,5 +178,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn oldStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn newStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn changeDateDataGridViewTextBoxColumn;
+        private ComplainManagementSystemDataSet3 complainManagementSystemDataSet3;
+        private System.Windows.Forms.BindingSource complainHistoryBindingSource1;
+        private ComplainManagementSystemDataSet3TableAdapters.ComplainHistoryTableAdapter complainHistoryTableAdapter1;
     }
 }

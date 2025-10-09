@@ -183,6 +183,18 @@
     <Compile Include="AdminPage.Designer.cs">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllComplain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllComplain.Designer.cs">
+      <DependentUpon>AllComplain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignPolice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignPolice.Designer.cs">
+      <DependentUpon>AssignPolice.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComplainHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +210,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ComplainManagementSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComplainManagementSystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplainManagementSystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComplainManagementSystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplainManagementSystemDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="CreateAccount.cs">
       <SubType>Form</SubType>
@@ -272,6 +294,28 @@
     <None Include="ComplainManagementSystemDataSet1.xss">
       <DependentUpon>ComplainManagementSystemDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="ComplainManagementSystemDataSet2.xsc">
+      <DependentUpon>ComplainManagementSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ComplainManagementSystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComplainManagementSystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ComplainManagementSystemDataSet2.xss">
+      <DependentUpon>ComplainManagementSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ComplainManagementSystemDataSet3.xsc">
+      <DependentUpon>ComplainManagementSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ComplainManagementSystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComplainManagementSystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ComplainManagementSystemDataSet3.xss">
+      <DependentUpon>ComplainManagementSystemDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -287,6 +331,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminPage.resx">
       <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllComplain.resx">
+      <DependentUpon>AllComplain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignPolice.resx">
+      <DependentUpon>AssignPolice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ComplainHistory.resx">
       <DependentUpon>ComplainHistory.cs</DependentUpon>

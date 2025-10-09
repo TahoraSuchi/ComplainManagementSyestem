@@ -38,5 +38,20 @@ namespace ComplainManagementSyestem
             update.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AllComplain allcomplain = new AllComplain();
+            allcomplain.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AssignPolice AssignPolice = new AssignPolice();
+            AssignPolice.Show();
+            this.Hide();
+
+        }
     }
 }

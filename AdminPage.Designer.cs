@@ -36,7 +36,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.managebtn = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -49,6 +49,7 @@
             this.button5.TabIndex = 11;
             this.button5.Text = "Assign Complain";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -68,6 +69,7 @@
             this.button3.TabIndex = 9;
             this.button3.Text = "Show All Complain";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -109,14 +111,14 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // managebtn
             // 
-            this.button7.Location = new System.Drawing.Point(371, 268);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(170, 54);
-            this.button7.TabIndex = 13;
-            this.button7.Text = "Remove User";
-            this.button7.UseVisualStyleBackColor = true;
+            this.managebtn.Location = new System.Drawing.Point(371, 268);
+            this.managebtn.Name = "managebtn";
+            this.managebtn.Size = new System.Drawing.Size(170, 54);
+            this.managebtn.TabIndex = 13;
+            this.managebtn.Text = "Manage User";
+            this.managebtn.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
@@ -145,7 +147,7 @@
             this.ClientSize = new System.Drawing.Size(921, 529);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.managebtn);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -170,7 +172,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button managebtn;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
     }
