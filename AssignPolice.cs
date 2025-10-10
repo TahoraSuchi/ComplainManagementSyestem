@@ -15,7 +15,7 @@ namespace ComplainManagementSyestem
             InitializeComponent();
         }
 
-        // Back button
+     
         private void backbtn_Click(object sender, EventArgs e)
         {
             AdminPage admin = new AdminPage();
@@ -23,7 +23,7 @@ namespace ComplainManagementSyestem
             this.Hide();
         }
 
-        // Assign complaint to police
+ 
         private void assignbtn_Click(object sender, EventArgs e)
         {
             string complainIdText = textBox1.Text.Trim();
@@ -47,7 +47,6 @@ namespace ComplainManagementSyestem
                 {
                     conn.Open();
 
-                    // Check if the user has role 'Police'
                     string checkRoleQuery = "SELECT Role FROM [User] WHERE UserID = @PoliceID";
                     SqlCommand roleCmd = new SqlCommand(checkRoleQuery, conn);
                     roleCmd.Parameters.AddWithValue("@PoliceID", policeId);
@@ -66,18 +65,18 @@ namespace ComplainManagementSyestem
                         return;
                     }
 
-                    // Optional: Check if complaint is already assigned
+            
                     string checkAssignedQuery = "SELECT COUNT(*) FROM ComplainAssign WHERE ComplainID = @ComplainID";
                     SqlCommand checkAssignedCmd = new SqlCommand(checkAssignedQuery, conn);
                     checkAssignedCmd.Parameters.AddWithValue("@ComplainID", complainId);
                     int count = (int)checkAssignedCmd.ExecuteScalar();
-                    if (count > 0)
+                    if (count > 5)
                     {
                         MessageBox.Show("This complaint has already been assigned to a police officer.");
                         return;
                     }
 
-                    // Insert into ComplainAssign table
+  
                     string insertQuery = "INSERT INTO ComplainAssign (ComplainID, PoliceID, AssignDate) " +
                                          "VALUES (@ComplainID, @PoliceID, @AssignDate)";
                     SqlCommand insertCmd = new SqlCommand(insertQuery, conn);

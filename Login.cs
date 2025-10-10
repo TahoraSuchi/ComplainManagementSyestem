@@ -54,7 +54,7 @@ namespace ComplainManagementSyestem
                             }
                             else if (role == "Admin")
                             {
-                                AdminPage adminPage = new AdminPage();
+                                AdminPage adminPage = new AdminPage(userId); 
                                 adminPage.Show();
                                 this.Hide();
                             }

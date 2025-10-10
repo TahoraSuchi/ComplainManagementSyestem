@@ -1,17 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace ComplainManagementSyestem
 {
     public partial class AdminPage : Form
     {
+        private int loggedInUserId;
+
+        public AdminPage(int userId)
+        {
+            InitializeComponent();
+            loggedInUserId = userId;
+        }
+
         public AdminPage()
         {
             InitializeComponent();
@@ -29,29 +32,55 @@ namespace ComplainManagementSyestem
             AddPolice add = new AddPolice();
             add.Show();
             this.Hide();
-
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Update update = new Update();
+            Update update = new Update(loggedInUserId);
             update.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AllComplain allcomplain = new AllComplain();
-            allcomplain.Show();
+            AllComplain allComplain = new AllComplain();
+            allComplain.Show();
             this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            AssignPolice AssignPolice = new AssignPolice();
-            AssignPolice.Show();
+            AssignPolice assignPolice = new AssignPolice();
+            assignPolice.Show();
             this.Hide();
+        }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            ShowFeedback showFeedback = new ShowFeedback();
+            showFeedback.Show();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AllHistory allHistory = new AllHistory();
+            allHistory.Show();
+            this.Hide();
+        }
+
+        private void managebtn_Click(object sender, EventArgs e)
+        {
+            ManageUser manageUser = new ManageUser();
+            manageUser.Show();
+            this.Hide();
+        }
+
+        private void profilebtn_Click(object sender, EventArgs e)
+        {
+            Profile profile = new Profile(loggedInUserId);
+            profile.Show();
+            this.Hide();
         }
     }
 }

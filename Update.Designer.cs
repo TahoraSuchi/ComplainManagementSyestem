@@ -29,25 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Update));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.complainManagementSystemDataSet1 = new ComplainManagementSyestem.ComplainManagementSystemDataSet1();
+            this.complainIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.currentStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.complainBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.complainManagementSystemDataSet1 = new ComplainManagementSyestem.ComplainManagementSystemDataSet1();
             this.complainTableAdapter = new ComplainManagementSyestem.ComplainManagementSystemDataSet1TableAdapters.ComplainTableAdapter();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.complainIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.currentStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -63,22 +64,25 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(36, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 16);
+            this.label1.Size = new System.Drawing.Size(131, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Enter ID";
+            this.label1.Text = "Enter Complain ID";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(135, 91);
+            this.textBox1.Location = new System.Drawing.Point(174, 88);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(183, 22);
             this.textBox1.TabIndex = 2;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(378, 89);
+            this.button2.Location = new System.Drawing.Point(413, 88);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
@@ -96,22 +100,55 @@
             this.titleDataGridViewTextBoxColumn,
             this.currentStatusDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.complainBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 148);
+            this.dataGridView1.Location = new System.Drawing.Point(39, 147);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(651, 401);
             this.dataGridView1.TabIndex = 4;
             // 
-            // complainManagementSystemDataSet1
+            // complainIDDataGridViewTextBoxColumn
             // 
-            this.complainManagementSystemDataSet1.DataSetName = "ComplainManagementSystemDataSet1";
-            this.complainManagementSystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.complainIDDataGridViewTextBoxColumn.DataPropertyName = "ComplainID";
+            this.complainIDDataGridViewTextBoxColumn.HeaderText = "ComplainID";
+            this.complainIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.complainIDDataGridViewTextBoxColumn.Name = "complainIDDataGridViewTextBoxColumn";
+            this.complainIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.complainIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // userIDDataGridViewTextBoxColumn
+            // 
+            this.userIDDataGridViewTextBoxColumn.DataPropertyName = "UserID";
+            this.userIDDataGridViewTextBoxColumn.HeaderText = "UserID";
+            this.userIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.userIDDataGridViewTextBoxColumn.Name = "userIDDataGridViewTextBoxColumn";
+            this.userIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // titleDataGridViewTextBoxColumn
+            // 
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
+            this.titleDataGridViewTextBoxColumn.HeaderText = "Title";
+            this.titleDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            this.titleDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // currentStatusDataGridViewTextBoxColumn
+            // 
+            this.currentStatusDataGridViewTextBoxColumn.DataPropertyName = "CurrentStatus";
+            this.currentStatusDataGridViewTextBoxColumn.HeaderText = "CurrentStatus";
+            this.currentStatusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.currentStatusDataGridViewTextBoxColumn.Name = "currentStatusDataGridViewTextBoxColumn";
+            this.currentStatusDataGridViewTextBoxColumn.Width = 125;
             // 
             // complainBindingSource
             // 
             this.complainBindingSource.DataMember = "Complain";
             this.complainBindingSource.DataSource = this.complainManagementSystemDataSet1;
+            // 
+            // complainManagementSystemDataSet1
+            // 
+            this.complainManagementSystemDataSet1.DataSetName = "ComplainManagementSystemDataSet1";
+            this.complainManagementSystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // complainTableAdapter
             // 
@@ -120,9 +157,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(714, 222);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(50, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "Status";
             // 
@@ -161,43 +201,12 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // complainIDDataGridViewTextBoxColumn
-            // 
-            this.complainIDDataGridViewTextBoxColumn.DataPropertyName = "ComplainID";
-            this.complainIDDataGridViewTextBoxColumn.HeaderText = "ComplainID";
-            this.complainIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.complainIDDataGridViewTextBoxColumn.Name = "complainIDDataGridViewTextBoxColumn";
-            this.complainIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.complainIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // userIDDataGridViewTextBoxColumn
-            // 
-            this.userIDDataGridViewTextBoxColumn.DataPropertyName = "UserID";
-            this.userIDDataGridViewTextBoxColumn.HeaderText = "UserID";
-            this.userIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.userIDDataGridViewTextBoxColumn.Name = "userIDDataGridViewTextBoxColumn";
-            this.userIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // titleDataGridViewTextBoxColumn
-            // 
-            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
-            this.titleDataGridViewTextBoxColumn.HeaderText = "Title";
-            this.titleDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
-            this.titleDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // currentStatusDataGridViewTextBoxColumn
-            // 
-            this.currentStatusDataGridViewTextBoxColumn.DataPropertyName = "CurrentStatus";
-            this.currentStatusDataGridViewTextBoxColumn.HeaderText = "CurrentStatus";
-            this.currentStatusDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.currentStatusDataGridViewTextBoxColumn.Name = "currentStatusDataGridViewTextBoxColumn";
-            this.currentStatusDataGridViewTextBoxColumn.Width = 125;
-            // 
             // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1048, 597);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.comboBox1);
@@ -212,8 +221,8 @@
             this.Text = "Update";
             this.Load += new System.EventHandler(this.Update_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

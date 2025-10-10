@@ -20,7 +20,7 @@ namespace ComplainManagementSyestem
             LoadAllComplaints();
         }
 
-        // Load all complaints into DataGridView
+
         private void LoadAllComplaints()
         {
             try
@@ -40,7 +40,6 @@ namespace ComplainManagementSyestem
             }
         }
 
-        // Search complaint by ComplainID
         private void searchbtn_Click(object sender, EventArgs e)
         {
             string complainId = textBox1.Text.Trim();
@@ -80,19 +79,59 @@ namespace ComplainManagementSyestem
             }
         }
 
-        // Reset search and reload all complaints
+
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
             LoadAllComplaints();
         }
 
-        // Back button to AdminPage
         private void backbtn_Click(object sender, EventArgs e)
         {
             AdminPage admin = new AdminPage();
             admin.Show();
             this.Hide();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    string searchText = textBox1.Text.Trim();
+                    string query;
+
+                    if (string.IsNullOrEmpty(searchText))
+                    {
+                        // If search box is empty, load all complaints
+                        query = "SELECT * FROM Complain";
+                    }
+                    else
+                    {
+                        // Search only by ComplainID
+                        query = "SELECT * FROM Complain WHERE ComplainID LIKE @SearchText";
+                    }
+
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@SearchText", "%" + searchText + "%");
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+
+                    dataGridView1.DataSource = dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+
     }
 }
+
