@@ -10,6 +10,8 @@
 
 #pragma warning disable 1591
 
+using System;
+
 namespace ComplainManagementSyestem {
     
     
@@ -1142,6 +1144,11 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(int ComplainID, int ComplainBy, string OldStatus, string NewStatus, global::System.Nullable<global::System.DateTime> ChangeDate, int Original_HistoryID, int Original_ComplainID, int Original_ComplainBy, string Original_OldStatus, string Original_NewStatus, global::System.Nullable<global::System.DateTime> Original_ChangeDate) {
             return this.Update(ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate, Original_HistoryID, Original_ComplainID, Original_ComplainBy, Original_OldStatus, Original_NewStatus, Original_ChangeDate, Original_HistoryID);
+        }
+
+        internal void Fill(object complainHistory)
+        {
+            throw new NotImplementedException();
         }
     }
     

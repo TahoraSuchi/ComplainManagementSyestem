@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace ComplainManagementSyestem
@@ -11,6 +13,28 @@ namespace ComplainManagementSyestem
         {
             InitializeComponent();
             loggedInUserId = userId;
+            this.Load += PolicePage_Load; 
+        }
+
+        private void PolicePage_Load(object sender, EventArgs e)
+        {
+            if (loggedInUserId <= 0)
+                return;
+
+            string connectionString = ConfigurationManager.ConnectionStrings["UserDb"].ConnectionString;
+            string query = "SELECT Name FROM [User] WHERE UserID = @id";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@id", loggedInUserId);
+                conn.Open();
+                object result = cmd.ExecuteScalar();
+                if (result != null)
+                {
+                    labelUserName.Text =  result.ToString(); 
+                }
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -29,8 +53,8 @@ namespace ComplainManagementSyestem
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AllComplain AllComplain = new AllComplain(loggedInUserId);
-            AllComplain.Show();
+            AllComplain allComplain = new AllComplain(loggedInUserId);
+            allComplain.Show();
             this.Hide();
         }
 
@@ -43,17 +67,16 @@ namespace ComplainManagementSyestem
 
         private void formebtn_Click(object sender, EventArgs e)
         {
-            ComplainForPolice ComplainForPolice = new ComplainForPolice(loggedInUserId);
-            ComplainForPolice.Show();
+            ComplainForPolice complainForPolice = new ComplainForPolice(loggedInUserId);
+            complainForPolice.Show();
             this.Hide();
         }
 
         private void historybtn_Click(object sender, EventArgs e)
         {
-            AllHistory AllHistory = new AllHistory(loggedInUserId);
-            AllHistory.Show();
+            AllHistory allHistory = new AllHistory(loggedInUserId);
+            allHistory.Show();
             this.Hide();
-
         }
     }
 }

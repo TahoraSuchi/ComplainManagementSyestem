@@ -12,7 +12,6 @@ namespace ComplainManagementSyestem
             InitializeComponent();
         }
 
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (!checkBox1.Checked)
@@ -26,7 +25,7 @@ namespace ComplainManagementSyestem
             string email = textBox2.Text.Trim();
             string username = textBox3.Text.Trim();
             string password = textBox4.Text.Trim();
-            string role = "User"; 
+            string role = "User";
 
             if (string.IsNullOrWhiteSpace(name) ||
                 string.IsNullOrWhiteSpace(email) ||
@@ -42,9 +41,8 @@ namespace ComplainManagementSyestem
                 .ConnectionStrings["UserDb"]
                 .ConnectionString;
 
-            string query =
-                "INSERT INTO [User] (Name, Email, Username, Password, Role) " +
-                "VALUES (@name, @mail, @user, @pass, @role)";
+            string query = "INSERT INTO [User] (Name, Email, Username, Password, Role) " +
+                           "VALUES (@name, @mail, @user, @pass, @role)";
 
             try
             {
@@ -55,7 +53,7 @@ namespace ComplainManagementSyestem
                     cmd.Parameters.AddWithValue("@mail", email);
                     cmd.Parameters.AddWithValue("@user", username);
                     cmd.Parameters.AddWithValue("@pass", password);
-                    cmd.Parameters.AddWithValue("@role", role);  
+                    cmd.Parameters.AddWithValue("@role", role);
 
                     conn.Open();
                     int rows = cmd.ExecuteNonQuery();
@@ -63,9 +61,7 @@ namespace ComplainManagementSyestem
                     if (rows > 0)
                     {
                         MessageBox.Show("Account created successfully!",
-                                        "Success", MessageBoxButtons.OK,
-                                        MessageBoxIcon.Information);
-
+                                        "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Login login = new Login();
                         login.Show();
                         this.Hide();
@@ -73,16 +69,14 @@ namespace ComplainManagementSyestem
                     else
                     {
                         MessageBox.Show("Account creation failed.",
-                                        "Error", MessageBoxButtons.OK,
-                                        MessageBoxIcon.Error);
+                                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Database error: " + ex.Message,
-                                "Error", MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

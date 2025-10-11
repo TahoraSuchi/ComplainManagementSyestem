@@ -171,6 +171,12 @@
     <Compile Include="AddComplain.Designer.cs">
       <DependentUpon>AddComplain.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddEvidence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEvidence.Designer.cs">
+      <DependentUpon>AddEvidence.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddPolice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,6 +263,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ComplainManagementSystemDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComplainManagementSystemDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplainManagementSystemDataSet17.xsd</DependentUpon>
     </Compile>
     <Compile Include="ComplainManagementSystemDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -472,6 +483,17 @@
     <None Include="ComplainManagementSystemDataSet16.xss">
       <DependentUpon>ComplainManagementSystemDataSet16.xsd</DependentUpon>
     </None>
+    <None Include="ComplainManagementSystemDataSet17.xsc">
+      <DependentUpon>ComplainManagementSystemDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="ComplainManagementSystemDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComplainManagementSystemDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ComplainManagementSystemDataSet17.xss">
+      <DependentUpon>ComplainManagementSystemDataSet17.xsd</DependentUpon>
+    </None>
     <None Include="ComplainManagementSystemDataSet2.xsc">
       <DependentUpon>ComplainManagementSystemDataSet2.xsd</DependentUpon>
     </None>
@@ -569,6 +591,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AddComplain.resx">
       <DependentUpon>AddComplain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEvidence.resx">
+      <DependentUpon>AddEvidence.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddPolice.resx">
       <DependentUpon>AddPolice.cs</DependentUpon>

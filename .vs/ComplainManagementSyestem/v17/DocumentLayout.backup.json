@@ -3,36 +3,107 @@
   "WorkspaceRootPath": "F:\\Final\\ComplainManagementSyestem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\addpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:addpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42AA93DB-C398-4DE0-AD2F-C3B7349028A2}|..\\Data.Layer\\Data.Layer.csproj|f:\\final\\data.layer\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\addcomplain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:addcomplain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Final\\ComplainManagementSyestem\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\complainforpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:complainforpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Final\\ComplainManagementSyestem\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\allhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:allhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\showfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:showfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\showfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:showfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\showevidence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:showevidence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Final\\ComplainManagementSyestem\\policepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:policepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Final\\ComplainManagementSyestem\\policepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:policepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\manageuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:manageuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Final\\ComplainManagementSyestem\\manageuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:manageuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\addpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:addpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\complainhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:complainhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\complainforpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\complainhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:complainhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\complainforpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:complainforpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Final\\ComplainManagementSyestem\\complainforpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:complainforpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\policepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:policepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\assignpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:assignpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\assignpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:assignpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\allhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:allhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\allhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:allhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\allcomplain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,16 +114,40 @@
       "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:allcomplain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Final\\ComplainManagementSyestem\\adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\policepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:policepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Final\\ComplainManagementSyestem\\adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\addpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:addpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\addpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:addpolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\addevidence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:addevidence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\addevidence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:addevidence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\addcomplain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:addcomplain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|f:\\final\\complainmanagementsyestem\\addcomplain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:addcomplain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Final\\ComplainManagementSyestem\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E79EAA3-FD1D-41DB-B422-059379DC84A8}|ComplainManagementSyestem.csproj|F:\\Final\\ComplainManagementSyestem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,147 +161,410 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddComplain.cs [Design]",
-              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AddComplain.cs",
-              "RelativeDocumentMoniker": "AddComplain.cs",
-              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AddComplain.cs [Design]",
-              "RelativeToolTip": "AddComplain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T18:37:51.57Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddPolice.cs",
-              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AddPolice.cs",
-              "RelativeDocumentMoniker": "AddPolice.cs",
-              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AddPolice.cs",
-              "RelativeToolTip": "AddPolice.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAwwE8AAAAtAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\Final\\Data.Layer\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "..\\Data.Layer\\Entity\\User.cs",
+              "ToolTip": "F:\\Final\\Data.Layer\\Entity\\User.cs",
+              "RelativeToolTip": "..\\Data.Layer\\Entity\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T18:32:46.451Z",
+              "WhenOpened": "2025-10-11T22:39:31.263Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddPolice.cs [Design]",
-              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AddPolice.cs",
-              "RelativeDocumentMoniker": "AddPolice.cs",
-              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AddPolice.cs [Design]",
-              "RelativeToolTip": "AddPolice.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "Update.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\Update.cs",
+              "RelativeDocumentMoniker": "Update.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\Update.cs*",
+              "RelativeToolTip": "Update.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T18:32:32.556Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-11T22:38:17.605Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CreateAccount.cs [Design]",
-              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\CreateAccount.cs",
-              "RelativeDocumentMoniker": "CreateAccount.cs",
-              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\CreateAccount.cs [Design]",
-              "RelativeToolTip": "CreateAccount.cs [Design]",
+              "Title": "Update.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\Update.cs",
+              "RelativeDocumentMoniker": "Update.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\Update.cs [Design]*",
+              "RelativeToolTip": "Update.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T18:32:19.913Z",
+              "WhenOpened": "2025-10-11T22:37:38.315Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AllHistory.cs [Design]",
-              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AllHistory.cs",
-              "RelativeDocumentMoniker": "AllHistory.cs",
-              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AllHistory.cs [Design]",
-              "RelativeToolTip": "AllHistory.cs [Design]",
+              "DocumentIndex": 5,
+              "Title": "ShowFeedback.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\ShowFeedback.cs",
+              "RelativeDocumentMoniker": "ShowFeedback.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\ShowFeedback.cs*",
+              "RelativeToolTip": "ShowFeedback.cs*",
+              "ViewState": "AgIAAHkAAAAAAAAAAAA/wHsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T18:24:10.505Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ComplainForPolice.cs",
-              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\ComplainForPolice.cs",
-              "RelativeDocumentMoniker": "ComplainForPolice.cs",
-              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\ComplainForPolice.cs",
-              "RelativeToolTip": "ComplainForPolice.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T18:18:23.235Z",
+              "WhenOpened": "2025-10-11T22:37:23.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ComplainForPolice.cs [Design]",
-              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\ComplainForPolice.cs",
-              "RelativeDocumentMoniker": "ComplainForPolice.cs",
-              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\ComplainForPolice.cs [Design]",
-              "RelativeToolTip": "ComplainForPolice.cs [Design]",
+              "Title": "ShowFeedback.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\ShowFeedback.cs",
+              "RelativeDocumentMoniker": "ShowFeedback.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\ShowFeedback.cs [Design]*",
+              "RelativeToolTip": "ShowFeedback.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T18:14:15.681Z",
+              "WhenOpened": "2025-10-11T22:35:39.424Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserPage.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\UserPage.cs",
+              "RelativeDocumentMoniker": "UserPage.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\UserPage.cs [Design]",
+              "RelativeToolTip": "UserPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T21:32:02.894Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserPage.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\UserPage.cs",
+              "RelativeDocumentMoniker": "UserPage.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\UserPage.cs",
+              "RelativeToolTip": "UserPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T21:40:24.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ShowEvidence.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\ShowEvidence.cs",
+              "RelativeDocumentMoniker": "ShowEvidence.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\ShowEvidence.cs [Design]*",
+              "RelativeToolTip": "ShowEvidence.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:34:11.285Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Profile.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\Profile.cs",
+              "RelativeDocumentMoniker": "Profile.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\Profile.cs [Design]",
+              "RelativeToolTip": "Profile.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:34:07.478Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ManageUser.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\ManageUser.cs",
+              "RelativeDocumentMoniker": "ManageUser.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\ManageUser.cs*",
+              "RelativeToolTip": "ManageUser.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:33:40.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\Feedback.cs",
+              "RelativeDocumentMoniker": "Feedback.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\Feedback.cs*",
+              "RelativeToolTip": "Feedback.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:32:19.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Feedback.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\Feedback.cs",
+              "RelativeDocumentMoniker": "Feedback.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\Feedback.cs [Design]*",
+              "RelativeToolTip": "Feedback.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:30:05.843Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateAccount.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\CreateAccount.cs",
+              "RelativeDocumentMoniker": "CreateAccount.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\CreateAccount.cs",
+              "RelativeToolTip": "CreateAccount.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:29:56.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\Login.cs [Design]",
+              "RelativeToolTip": "Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T20:43:44.62Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "PolicePage.cs [Design]",
               "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\PolicePage.cs",
               "RelativeDocumentMoniker": "PolicePage.cs",
               "ToolTip": "F:\\Final\\ComplainManagementSyestem\\PolicePage.cs [Design]",
               "RelativeToolTip": "PolicePage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T14:56:52.009Z",
+              "WhenOpened": "2025-10-11T20:51:55.543Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "PolicePage.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\PolicePage.cs",
+              "RelativeDocumentMoniker": "PolicePage.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\PolicePage.cs",
+              "RelativeToolTip": "PolicePage.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswDAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T15:24:16.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CreateAccount.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\CreateAccount.cs",
+              "RelativeDocumentMoniker": "CreateAccount.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\CreateAccount.cs [Design]",
+              "RelativeToolTip": "CreateAccount.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:29:54.673Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ManageUser.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\ManageUser.cs",
+              "RelativeDocumentMoniker": "ManageUser.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\ManageUser.cs [Design]*",
+              "RelativeToolTip": "ManageUser.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T20:49:16.158Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ComplainHistory.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\ComplainHistory.cs",
+              "RelativeDocumentMoniker": "ComplainHistory.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\ComplainHistory.cs*",
+              "RelativeToolTip": "ComplainHistory.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:29:45.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ComplainHistory.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\ComplainHistory.cs",
+              "RelativeDocumentMoniker": "ComplainHistory.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\ComplainHistory.cs [Design]*",
+              "RelativeToolTip": "ComplainHistory.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:27:11.795Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ComplainForPolice.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\ComplainForPolice.cs",
+              "RelativeDocumentMoniker": "ComplainForPolice.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\ComplainForPolice.cs*",
+              "RelativeToolTip": "ComplainForPolice.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:27:06.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AssignPolice.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AssignPolice.cs",
+              "RelativeDocumentMoniker": "AssignPolice.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AssignPolice.cs*",
+              "RelativeToolTip": "AssignPolice.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:26:14.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AssignPolice.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AssignPolice.cs",
+              "RelativeDocumentMoniker": "AssignPolice.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AssignPolice.cs [Design]*",
+              "RelativeToolTip": "AssignPolice.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:24:33.565Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AllHistory.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AllHistory.cs",
+              "RelativeDocumentMoniker": "AllHistory.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AllHistory.cs",
+              "RelativeToolTip": "AllHistory.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAAEsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:24:27.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AllHistory.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AllHistory.cs",
+              "RelativeDocumentMoniker": "AllHistory.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AllHistory.cs [Design]",
+              "RelativeToolTip": "AllHistory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:24:25.628Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AllComplain.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AllComplain.cs",
+              "RelativeDocumentMoniker": "AllComplain.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AllComplain.cs",
+              "RelativeToolTip": "AllComplain.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAC0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:24:14.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ComplainForPolice.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\ComplainForPolice.cs",
+              "RelativeDocumentMoniker": "ComplainForPolice.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\ComplainForPolice.cs [Design]*",
+              "RelativeToolTip": "ComplainForPolice.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T20:52:07.139Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "AllComplain.cs [Design]",
               "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AllComplain.cs",
               "RelativeDocumentMoniker": "AllComplain.cs",
               "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AllComplain.cs [Design]",
               "RelativeToolTip": "AllComplain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T18:24:22.345Z",
+              "WhenOpened": "2025-10-11T22:24:12.985Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AllComplain.cs",
-              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AllComplain.cs",
-              "RelativeDocumentMoniker": "AllComplain.cs",
-              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AllComplain.cs",
-              "RelativeToolTip": "AllComplain.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAjwFgAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 30,
+              "Title": "AddPolice.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AddPolice.cs",
+              "RelativeDocumentMoniker": "AddPolice.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AddPolice.cs",
+              "RelativeToolTip": "AddPolice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T18:24:24.111Z",
+              "WhenOpened": "2025-10-11T22:23:57.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AdminPage.cs",
-              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AdminPage.cs",
-              "RelativeDocumentMoniker": "AdminPage.cs",
-              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AdminPage.cs",
-              "RelativeToolTip": "AdminPage.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAArwEIAAABBAAAAAAAAAA==",
+              "DocumentIndex": 31,
+              "Title": "AddPolice.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AddPolice.cs",
+              "RelativeDocumentMoniker": "AddPolice.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AddPolice.cs [Design]",
+              "RelativeToolTip": "AddPolice.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T18:11:23.77Z",
+              "WhenOpened": "2025-10-11T22:23:55.053Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AddEvidence.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AddEvidence.cs",
+              "RelativeDocumentMoniker": "AddEvidence.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AddEvidence.cs*",
+              "RelativeToolTip": "AddEvidence.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:23:41.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 33,
+              "Title": "AddEvidence.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AddEvidence.cs",
+              "RelativeDocumentMoniker": "AddEvidence.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AddEvidence.cs [Design]*",
+              "RelativeToolTip": "AddEvidence.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:22:04.986Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "AdminPage.cs [Design]",
               "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AdminPage.cs",
               "RelativeDocumentMoniker": "AdminPage.cs",
@@ -218,20 +576,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PolicePage.cs",
-              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\PolicePage.cs",
-              "RelativeDocumentMoniker": "PolicePage.cs",
-              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\PolicePage.cs",
-              "RelativeToolTip": "PolicePage.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAMwDQAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 28,
+              "Title": "AdminPage.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AdminPage.cs",
+              "RelativeDocumentMoniker": "AdminPage.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AdminPage.cs",
+              "RelativeToolTip": "AdminPage.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAAAC8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T15:24:16.52Z",
+              "WhenOpened": "2025-10-11T21:59:26.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 34,
+              "Title": "AddComplain.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AddComplain.cs",
+              "RelativeDocumentMoniker": "AddComplain.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AddComplain.cs",
+              "RelativeToolTip": "AddComplain.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwFIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:21:57.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AddComplain.cs [Design]",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\AddComplain.cs",
+              "RelativeDocumentMoniker": "AddComplain.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\AddComplain.cs [Design]",
+              "RelativeToolTip": "AddComplain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:21:56.27Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Login.cs",
+              "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "F:\\Final\\ComplainManagementSyestem\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T22:04:10.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Final\\ComplainManagementSyestem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -239,8 +635,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T18:21:19.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T18:21:19.548Z"
             }
           ]
         }

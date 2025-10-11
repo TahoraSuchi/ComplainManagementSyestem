@@ -13,11 +13,34 @@ namespace ComplainManagementSyestem
         {
             InitializeComponent();
             loggedInUserId = userId;
+            this.Load += AdminPage_Load; 
         }
 
         public AdminPage()
         {
             InitializeComponent();
+            this.Load += AdminPage_Load; 
+        }
+
+        private void AdminPage_Load(object sender, EventArgs e)
+        {
+            if (loggedInUserId <= 0)
+                return;
+
+            string connectionString = ConfigurationManager.ConnectionStrings["UserDb"].ConnectionString;
+            string query = "SELECT Name FROM [User] WHERE UserID = @id";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@id", loggedInUserId);
+                conn.Open();
+                object result = cmd.ExecuteScalar();
+                if (result != null)
+                {
+                    label2.Text = result.ToString(); 
+                }
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
