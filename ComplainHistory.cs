@@ -17,18 +17,9 @@ namespace ComplainManagementSyestem
             loggedInUserID = userId;
         }
 
-        public ComplainHistory()
-        {
-            InitializeComponent();
-        }
-
         private void ComplainHistory_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'complainManagementSystemDataSet12.ComplainHistory' table. You can move, or remove it, as needed.
-            this.complainHistoryTableAdapter2.Fill(this.complainManagementSystemDataSet12.ComplainHistory);
-            // TODO: This line of code loads data into the 'complainManagementSystemDataSet9.ComplaintHistory' table. You can move, or remove it, as needed.
-            this.complaintHistoryTableAdapter.Fill(this.complainManagementSystemDataSet9.ComplaintHistory);
-            LoadUserComplainHistory(); 
+            LoadUserComplainHistory();
         }
 
         private void LoadUserComplainHistory()
@@ -37,9 +28,14 @@ namespace ComplainManagementSyestem
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                 
                     string query = @"
-                        SELECT h.HistoryID, h.ComplainID, h.ChangedBy, h.OldStatus, h.NewStatus, h.ChangeDate
+                        SELECT 
+                            h.HistoryID,
+                            h.ComplainID,
+                            h.OldStatus,
+                            h.NewStatus,
+                            h.ChangeDate,
+                            h.ChangedBy
                         FROM ComplainHistory h
                         INNER JOIN Complain c ON h.ComplainID = c.ComplainID
                         WHERE c.UserID = @UserID
@@ -52,7 +48,8 @@ namespace ComplainManagementSyestem
                     DataTable dt = new DataTable();
                     da.Fill(dt);
 
-                    dataGridView1.DataSource = dt; 
+            
+                    dataGridView1.DataSource = dt;
                 }
             }
             catch (Exception ex)
@@ -64,7 +61,6 @@ namespace ComplainManagementSyestem
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
             UserPage userPage = new UserPage(loggedInUserID);
             userPage.Show();
             this.Hide();
@@ -72,7 +68,6 @@ namespace ComplainManagementSyestem
 
         private void button2_Click(object sender, EventArgs e)
         {
-       
             LoadUserComplainHistory();
             MessageBox.Show("Data refreshed successfully!",
                             "Refreshed", MessageBoxButtons.OK, MessageBoxIcon.Information);

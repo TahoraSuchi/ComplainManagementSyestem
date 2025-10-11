@@ -59,7 +59,7 @@ namespace ComplainManagementSyestem
                 {
                     conn.Open();
 
-                    string query = "INSERT INTO Feedback (ComplainID, UserID, Rating, Comment) " +
+                    string query = "INSERT INTO Feedback (ComplainID, UserID, Rating, Comments) " +
                                    "VALUES (@ComplainID, @UserID, @Rating, @Comment)";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))

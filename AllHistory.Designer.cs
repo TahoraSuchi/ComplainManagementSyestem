@@ -36,32 +36,23 @@
             this.oldStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.newStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.changeDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.complainHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.complainManagementSystemDataSet5 = new ComplainManagementSyestem.ComplainManagementSystemDataSet5();
+            this.complainHistoryBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.complainManagementSystemDataSet13 = new ComplainManagementSyestem.ComplainManagementSystemDataSet13();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.searchbtn = new System.Windows.Forms.Button();
             this.backbtn = new System.Windows.Forms.Button();
             this.refreshbtn = new System.Windows.Forms.Button();
-            this.complainHistoryTableAdapter = new ComplainManagementSyestem.ComplainManagementSystemDataSet5TableAdapters.ComplainHistoryTableAdapter();
-            this.complainManagementSystemDataSet8 = new ComplainManagementSyestem.ComplainManagementSystemDataSet8();
-            this.complaintHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.complaintHistoryTableAdapter = new ComplainManagementSyestem.ComplainManagementSystemDataSet8TableAdapters.ComplaintHistoryTableAdapter();
-            this.complainManagementSystemDataSet11 = new ComplainManagementSyestem.ComplainManagementSystemDataSet11();
-            this.complainHistoryBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.complainHistoryTableAdapter1 = new ComplainManagementSyestem.ComplainManagementSystemDataSet11TableAdapters.ComplainHistoryTableAdapter();
-            this.complainManagementSystemDataSet13 = new ComplainManagementSyestem.ComplainManagementSystemDataSet13();
-            this.complainHistoryBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.complainHistoryTableAdapter2 = new ComplainManagementSyestem.ComplainManagementSystemDataSet13TableAdapters.ComplainHistoryTableAdapter();
+            this.complainManagementSystemDataSet17 = new ComplainManagementSyestem.ComplainManagementSystemDataSet17();
+            this.complainHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.complainHistoryTableAdapter = new ComplainManagementSyestem.ComplainManagementSystemDataSet17TableAdapters.ComplainHistoryTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainHistoryBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complaintHistoryBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainHistoryBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainHistoryBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainHistoryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -74,7 +65,7 @@
             this.oldStatusDataGridViewTextBoxColumn,
             this.newStatusDataGridViewTextBoxColumn,
             this.changeDateDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.complainHistoryBindingSource2;
+            this.dataGridView1.DataSource = this.complainHistoryBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(163, 105);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -122,15 +113,15 @@
             this.changeDateDataGridViewTextBoxColumn.Name = "changeDateDataGridViewTextBoxColumn";
             this.changeDateDataGridViewTextBoxColumn.Width = 125;
             // 
-            // complainHistoryBindingSource
+            // complainHistoryBindingSource2
             // 
-            this.complainHistoryBindingSource.DataMember = "ComplainHistory";
-            this.complainHistoryBindingSource.DataSource = this.complainManagementSystemDataSet5;
+            this.complainHistoryBindingSource2.DataMember = "ComplainHistory";
+            this.complainHistoryBindingSource2.DataSource = this.complainManagementSystemDataSet13;
             // 
-            // complainManagementSystemDataSet5
+            // complainManagementSystemDataSet13
             // 
-            this.complainManagementSystemDataSet5.DataSetName = "ComplainManagementSystemDataSet5";
-            this.complainManagementSystemDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.complainManagementSystemDataSet13.DataSetName = "ComplainManagementSystemDataSet13";
+            this.complainManagementSystemDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox1
             // 
@@ -182,51 +173,27 @@
             this.refreshbtn.UseVisualStyleBackColor = true;
             this.refreshbtn.Click += new System.EventHandler(this.refreshbtn_Click);
             // 
-            // complainHistoryTableAdapter
-            // 
-            this.complainHistoryTableAdapter.ClearBeforeFill = true;
-            // 
-            // complainManagementSystemDataSet8
-            // 
-            this.complainManagementSystemDataSet8.DataSetName = "ComplainManagementSystemDataSet8";
-            this.complainManagementSystemDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // complaintHistoryBindingSource
-            // 
-            this.complaintHistoryBindingSource.DataMember = "ComplaintHistory";
-            this.complaintHistoryBindingSource.DataSource = this.complainManagementSystemDataSet8;
-            // 
-            // complaintHistoryTableAdapter
-            // 
-            this.complaintHistoryTableAdapter.ClearBeforeFill = true;
-            // 
-            // complainManagementSystemDataSet11
-            // 
-            this.complainManagementSystemDataSet11.DataSetName = "ComplainManagementSystemDataSet11";
-            this.complainManagementSystemDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // complainHistoryBindingSource1
-            // 
-            this.complainHistoryBindingSource1.DataMember = "ComplainHistory";
-            this.complainHistoryBindingSource1.DataSource = this.complainManagementSystemDataSet11;
-            // 
             // complainHistoryTableAdapter1
             // 
             this.complainHistoryTableAdapter1.ClearBeforeFill = true;
             // 
-            // complainManagementSystemDataSet13
-            // 
-            this.complainManagementSystemDataSet13.DataSetName = "ComplainManagementSystemDataSet13";
-            this.complainManagementSystemDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // complainHistoryBindingSource2
-            // 
-            this.complainHistoryBindingSource2.DataMember = "ComplainHistory";
-            this.complainHistoryBindingSource2.DataSource = this.complainManagementSystemDataSet13;
-            // 
             // complainHistoryTableAdapter2
             // 
             this.complainHistoryTableAdapter2.ClearBeforeFill = true;
+            // 
+            // complainManagementSystemDataSet17
+            // 
+            this.complainManagementSystemDataSet17.DataSetName = "ComplainManagementSystemDataSet17";
+            this.complainManagementSystemDataSet17.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // complainHistoryBindingSource
+            // 
+            this.complainHistoryBindingSource.DataMember = "ComplainHistory";
+            this.complainHistoryBindingSource.DataSource = this.complainManagementSystemDataSet17;
+            // 
+            // complainHistoryTableAdapter
+            // 
+            this.complainHistoryTableAdapter.ClearBeforeFill = true;
             // 
             // AllHistory
             // 
@@ -247,14 +214,10 @@
             this.Text = "AllHistory";
             this.Load += new System.EventHandler(this.AllHistory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainHistoryBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complaintHistoryBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainHistoryBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainHistoryBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainHistoryBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,22 +231,17 @@
         private System.Windows.Forms.Button searchbtn;
         private System.Windows.Forms.Button backbtn;
         private System.Windows.Forms.Button refreshbtn;
-        private ComplainManagementSystemDataSet5 complainManagementSystemDataSet5;
-        private System.Windows.Forms.BindingSource complainHistoryBindingSource;
-        private ComplainManagementSystemDataSet5TableAdapters.ComplainHistoryTableAdapter complainHistoryTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn complainIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn changedByDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn oldStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn newStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn changeDateDataGridViewTextBoxColumn;
-        private ComplainManagementSystemDataSet8 complainManagementSystemDataSet8;
-        private System.Windows.Forms.BindingSource complaintHistoryBindingSource;
-        private ComplainManagementSystemDataSet8TableAdapters.ComplaintHistoryTableAdapter complaintHistoryTableAdapter;
-        private ComplainManagementSystemDataSet11 complainManagementSystemDataSet11;
-        private System.Windows.Forms.BindingSource complainHistoryBindingSource1;
         private ComplainManagementSystemDataSet11TableAdapters.ComplainHistoryTableAdapter complainHistoryTableAdapter1;
         private ComplainManagementSystemDataSet13 complainManagementSystemDataSet13;
         private System.Windows.Forms.BindingSource complainHistoryBindingSource2;
         private ComplainManagementSystemDataSet13TableAdapters.ComplainHistoryTableAdapter complainHistoryTableAdapter2;
+        private ComplainManagementSystemDataSet17 complainManagementSystemDataSet17;
+        private System.Windows.Forms.BindingSource complainHistoryBindingSource;
+        private ComplainManagementSystemDataSet17TableAdapters.ComplainHistoryTableAdapter complainHistoryTableAdapter;
     }
 }

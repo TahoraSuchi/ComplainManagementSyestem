@@ -50,5 +50,12 @@ namespace ComplainManagementSyestem
         {
          
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AddEvidence AddEvidence = new AddEvidence(loggedInUserID);
+            AddEvidence.Show();
+            this.Hide();
+        }
     }
 }

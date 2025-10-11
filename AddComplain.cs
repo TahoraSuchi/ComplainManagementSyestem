@@ -72,5 +72,17 @@ namespace ComplainManagementSyestem
             UserPage userPage = new UserPage(loggedInUserID);
             userPage.Show();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void yesbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UserPage userPage = new UserPage(loggedInUserID);
+            userPage.Show();
+        }
     }
 }

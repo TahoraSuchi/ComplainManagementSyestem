@@ -10,8 +10,6 @@
 
 #pragma warning disable 1591
 
-using System;
-
 namespace ComplainManagementSyestem {
     
     
@@ -22,9 +20,9 @@ namespace ComplainManagementSyestem {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("ComplainManagementSystemDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("ComplainManagementSystemDataSet17")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class ComplainManagementSystemDataSet : global::System.Data.DataSet {
+    public partial class ComplainManagementSystemDataSet17 : global::System.Data.DataSet {
         
         private ComplainHistoryDataTable tableComplainHistory;
         
@@ -32,7 +30,7 @@ namespace ComplainManagementSyestem {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public ComplainManagementSystemDataSet() {
+        public ComplainManagementSystemDataSet17() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -43,7 +41,7 @@ namespace ComplainManagementSyestem {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected ComplainManagementSystemDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected ComplainManagementSystemDataSet17(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -129,7 +127,7 @@ namespace ComplainManagementSyestem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            ComplainManagementSystemDataSet cln = ((ComplainManagementSystemDataSet)(base.Clone()));
+            ComplainManagementSystemDataSet17 cln = ((ComplainManagementSystemDataSet17)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -201,9 +199,9 @@ namespace ComplainManagementSyestem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "ComplainManagementSystemDataSet";
+            this.DataSetName = "ComplainManagementSystemDataSet17";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/ComplainManagementSystemDataSet.xsd";
+            this.Namespace = "http://tempuri.org/ComplainManagementSystemDataSet17.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableComplainHistory = new ComplainHistoryDataTable();
@@ -227,7 +225,7 @@ namespace ComplainManagementSyestem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            ComplainManagementSystemDataSet ds = new ComplainManagementSystemDataSet();
+            ComplainManagementSystemDataSet17 ds = new ComplainManagementSystemDataSet17();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -285,7 +283,7 @@ namespace ComplainManagementSyestem {
             
             private global::System.Data.DataColumn columnComplainID;
             
-            private global::System.Data.DataColumn columnComplainBy;
+            private global::System.Data.DataColumn columnChangedBy;
             
             private global::System.Data.DataColumn columnOldStatus;
             
@@ -344,9 +342,9 @@ namespace ComplainManagementSyestem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ComplainByColumn {
+            public global::System.Data.DataColumn ChangedByColumn {
                 get {
-                    return this.columnComplainBy;
+                    return this.columnChangedBy;
                 }
             }
             
@@ -411,12 +409,12 @@ namespace ComplainManagementSyestem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ComplainHistoryRow AddComplainHistoryRow(int ComplainID, int ComplainBy, string OldStatus, string NewStatus, System.DateTime ChangeDate) {
+            public ComplainHistoryRow AddComplainHistoryRow(int ComplainID, int ChangedBy, string OldStatus, string NewStatus, System.DateTime ChangeDate) {
                 ComplainHistoryRow rowComplainHistoryRow = ((ComplainHistoryRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         ComplainID,
-                        ComplainBy,
+                        ChangedBy,
                         OldStatus,
                         NewStatus,
                         ChangeDate};
@@ -451,7 +449,7 @@ namespace ComplainManagementSyestem {
             internal void InitVars() {
                 this.columnHistoryID = base.Columns["HistoryID"];
                 this.columnComplainID = base.Columns["ComplainID"];
-                this.columnComplainBy = base.Columns["ComplainBy"];
+                this.columnChangedBy = base.Columns["ChangedBy"];
                 this.columnOldStatus = base.Columns["OldStatus"];
                 this.columnNewStatus = base.Columns["NewStatus"];
                 this.columnChangeDate = base.Columns["ChangeDate"];
@@ -464,8 +462,8 @@ namespace ComplainManagementSyestem {
                 base.Columns.Add(this.columnHistoryID);
                 this.columnComplainID = new global::System.Data.DataColumn("ComplainID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnComplainID);
-                this.columnComplainBy = new global::System.Data.DataColumn("ComplainBy", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnComplainBy);
+                this.columnChangedBy = new global::System.Data.DataColumn("ChangedBy", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnChangedBy);
                 this.columnOldStatus = new global::System.Data.DataColumn("OldStatus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOldStatus);
                 this.columnNewStatus = new global::System.Data.DataColumn("NewStatus", typeof(string), null, global::System.Data.MappingType.Element);
@@ -481,10 +479,8 @@ namespace ComplainManagementSyestem {
                 this.columnHistoryID.ReadOnly = true;
                 this.columnHistoryID.Unique = true;
                 this.columnComplainID.AllowDBNull = false;
-                this.columnComplainBy.AllowDBNull = false;
-                this.columnOldStatus.AllowDBNull = false;
+                this.columnChangedBy.AllowDBNull = false;
                 this.columnOldStatus.MaxLength = 50;
-                this.columnNewStatus.AllowDBNull = false;
                 this.columnNewStatus.MaxLength = 50;
             }
             
@@ -553,7 +549,7 @@ namespace ComplainManagementSyestem {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                ComplainManagementSystemDataSet ds = new ComplainManagementSystemDataSet();
+                ComplainManagementSystemDataSet17 ds = new ComplainManagementSystemDataSet17();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -650,12 +646,12 @@ namespace ComplainManagementSyestem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int ComplainBy {
+            public int ChangedBy {
                 get {
-                    return ((int)(this[this.tableComplainHistory.ComplainByColumn]));
+                    return ((int)(this[this.tableComplainHistory.ChangedByColumn]));
                 }
                 set {
-                    this[this.tableComplainHistory.ComplainByColumn] = value;
+                    this[this.tableComplainHistory.ChangedByColumn] = value;
                 }
             }
             
@@ -663,7 +659,12 @@ namespace ComplainManagementSyestem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string OldStatus {
                 get {
-                    return ((string)(this[this.tableComplainHistory.OldStatusColumn]));
+                    try {
+                        return ((string)(this[this.tableComplainHistory.OldStatusColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OldStatus\' in table \'ComplainHistory\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableComplainHistory.OldStatusColumn] = value;
@@ -674,7 +675,12 @@ namespace ComplainManagementSyestem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string NewStatus {
                 get {
-                    return ((string)(this[this.tableComplainHistory.NewStatusColumn]));
+                    try {
+                        return ((string)(this[this.tableComplainHistory.NewStatusColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NewStatus\' in table \'ComplainHistory\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableComplainHistory.NewStatusColumn] = value;
@@ -695,6 +701,30 @@ namespace ComplainManagementSyestem {
                 set {
                     this[this.tableComplainHistory.ChangeDateColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsOldStatusNull() {
+                return this.IsNull(this.tableComplainHistory.OldStatusColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetOldStatusNull() {
+                this[this.tableComplainHistory.OldStatusColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNewStatusNull() {
+                return this.IsNull(this.tableComplainHistory.NewStatusColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNewStatusNull() {
+                this[this.tableComplainHistory.NewStatusColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -745,7 +775,7 @@ namespace ComplainManagementSyestem {
         }
     }
 }
-namespace ComplainManagementSyestem.ComplainManagementSystemDataSetTableAdapters {
+namespace ComplainManagementSyestem.ComplainManagementSystemDataSet17TableAdapters {
     
     
     /// <summary>
@@ -871,46 +901,50 @@ namespace ComplainManagementSyestem.ComplainManagementSystemDataSetTableAdapters
             tableMapping.DataSetTable = "ComplainHistory";
             tableMapping.ColumnMappings.Add("HistoryID", "HistoryID");
             tableMapping.ColumnMappings.Add("ComplainID", "ComplainID");
-            tableMapping.ColumnMappings.Add("ComplainBy", "ComplainBy");
+            tableMapping.ColumnMappings.Add("ChangedBy", "ChangedBy");
             tableMapping.ColumnMappings.Add("OldStatus", "OldStatus");
             tableMapping.ColumnMappings.Add("NewStatus", "NewStatus");
             tableMapping.ColumnMappings.Add("ChangeDate", "ChangeDate");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[ComplainHistory] WHERE (([HistoryID] = @Original_HistoryID) AND ([ComplainID] = @Original_ComplainID) AND ([ComplainBy] = @Original_ComplainBy) AND ([OldStatus] = @Original_OldStatus) AND ([NewStatus] = @Original_NewStatus) AND ((@IsNull_ChangeDate = 1 AND [ChangeDate] IS NULL) OR ([ChangeDate] = @Original_ChangeDate)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[ComplainHistory] WHERE (([HistoryID] = @Original_HistoryID) AND ([ComplainID] = @Original_ComplainID) AND ([ChangedBy] = @Original_ChangedBy) AND ((@IsNull_OldStatus = 1 AND [OldStatus] IS NULL) OR ([OldStatus] = @Original_OldStatus)) AND ((@IsNull_NewStatus = 1 AND [NewStatus] IS NULL) OR ([NewStatus] = @Original_NewStatus)) AND ((@IsNull_ChangeDate = 1 AND [ChangeDate] IS NULL) OR ([ChangeDate] = @Original_ChangeDate)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_HistoryID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "HistoryID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ComplainID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ComplainID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ComplainBy", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ComplainBy", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ChangedBy", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ChangedBy", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OldStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OldStatus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OldStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OldStatus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NewStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NewStatus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NewStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NewStatus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ChangeDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ChangeDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ChangeDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ChangeDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[ComplainHistory] ([ComplainID], [ComplainBy], [OldStatus], [NewStatus], [ChangeDate]) VALUES (@ComplainID, @ComplainBy, @OldStatus, @NewStatus, @ChangeDate);
-SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM ComplainHistory WHERE (HistoryID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[ComplainHistory] ([ComplainID], [ChangedBy], [OldStatus], [NewStatus], [ChangeDate]) VALUES (@ComplainID, @ChangedBy, @OldStatus, @NewStatus, @ChangeDate);
+SELECT HistoryID, ComplainID, ChangedBy, OldStatus, NewStatus, ChangeDate FROM ComplainHistory WHERE (HistoryID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ComplainID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ComplainID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ComplainBy", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ComplainBy", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ChangedBy", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ChangedBy", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OldStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OldStatus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NewStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NewStatus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ChangeDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ChangeDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[ComplainHistory] SET [ComplainID] = @ComplainID, [ComplainBy] = @ComplainBy, [OldStatus] = @OldStatus, [NewStatus] = @NewStatus, [ChangeDate] = @ChangeDate WHERE (([HistoryID] = @Original_HistoryID) AND ([ComplainID] = @Original_ComplainID) AND ([ComplainBy] = @Original_ComplainBy) AND ([OldStatus] = @Original_OldStatus) AND ([NewStatus] = @Original_NewStatus) AND ((@IsNull_ChangeDate = 1 AND [ChangeDate] IS NULL) OR ([ChangeDate] = @Original_ChangeDate)));
-SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM ComplainHistory WHERE (HistoryID = @HistoryID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[ComplainHistory] SET [ComplainID] = @ComplainID, [ChangedBy] = @ChangedBy, [OldStatus] = @OldStatus, [NewStatus] = @NewStatus, [ChangeDate] = @ChangeDate WHERE (([HistoryID] = @Original_HistoryID) AND ([ComplainID] = @Original_ComplainID) AND ([ChangedBy] = @Original_ChangedBy) AND ((@IsNull_OldStatus = 1 AND [OldStatus] IS NULL) OR ([OldStatus] = @Original_OldStatus)) AND ((@IsNull_NewStatus = 1 AND [NewStatus] IS NULL) OR ([NewStatus] = @Original_NewStatus)) AND ((@IsNull_ChangeDate = 1 AND [ChangeDate] IS NULL) OR ([ChangeDate] = @Original_ChangeDate)));
+SELECT HistoryID, ComplainID, ChangedBy, OldStatus, NewStatus, ChangeDate FROM ComplainHistory WHERE (HistoryID = @HistoryID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ComplainID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ComplainID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ComplainBy", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ComplainBy", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ChangedBy", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ChangedBy", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OldStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OldStatus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NewStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NewStatus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ChangeDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ChangeDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_HistoryID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "HistoryID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ComplainID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ComplainID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ComplainBy", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ComplainBy", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ChangedBy", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ChangedBy", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OldStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OldStatus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OldStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OldStatus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NewStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NewStatus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NewStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NewStatus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ChangeDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ChangeDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ChangeDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ChangeDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -930,8 +964,8 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM d" +
-                "bo.ComplainHistory";
+            this._commandCollection[0].CommandText = "SELECT HistoryID, ComplainID, ChangedBy, OldStatus, NewStatus, ChangeDate FROM db" +
+                "o.ComplainHistory";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -939,7 +973,7 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ComplainManagementSystemDataSet.ComplainHistoryDataTable dataTable) {
+        public virtual int Fill(ComplainManagementSystemDataSet17.ComplainHistoryDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -952,9 +986,9 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual ComplainManagementSystemDataSet.ComplainHistoryDataTable GetData() {
+        public virtual ComplainManagementSystemDataSet17.ComplainHistoryDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            ComplainManagementSystemDataSet.ComplainHistoryDataTable dataTable = new ComplainManagementSystemDataSet.ComplainHistoryDataTable();
+            ComplainManagementSystemDataSet17.ComplainHistoryDataTable dataTable = new ComplainManagementSystemDataSet17.ComplainHistoryDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -962,14 +996,14 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ComplainManagementSystemDataSet.ComplainHistoryDataTable dataTable) {
+        public virtual int Update(ComplainManagementSystemDataSet17.ComplainHistoryDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ComplainManagementSystemDataSet dataSet) {
+        public virtual int Update(ComplainManagementSystemDataSet17 dataSet) {
             return this.Adapter.Update(dataSet, "ComplainHistory");
         }
         
@@ -992,29 +1026,33 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_HistoryID, int Original_ComplainID, int Original_ComplainBy, string Original_OldStatus, string Original_NewStatus, global::System.Nullable<global::System.DateTime> Original_ChangeDate) {
+        public virtual int Delete(int Original_HistoryID, int Original_ComplainID, int Original_ChangedBy, string Original_OldStatus, string Original_NewStatus, global::System.Nullable<global::System.DateTime> Original_ChangeDate) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_HistoryID));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_ComplainID));
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_ComplainBy));
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_ChangedBy));
             if ((Original_OldStatus == null)) {
-                throw new global::System.ArgumentNullException("Original_OldStatus");
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_OldStatus));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_OldStatus));
             }
             if ((Original_NewStatus == null)) {
-                throw new global::System.ArgumentNullException("Original_NewStatus");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_NewStatus));
-            }
-            if ((Original_ChangeDate.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_ChangeDate.Value));
-            }
-            else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_NewStatus));
+            }
+            if ((Original_ChangeDate.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((System.DateTime)(Original_ChangeDate.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1036,17 +1074,17 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int ComplainID, int ComplainBy, string OldStatus, string NewStatus, global::System.Nullable<global::System.DateTime> ChangeDate) {
+        public virtual int Insert(int ComplainID, int ChangedBy, string OldStatus, string NewStatus, global::System.Nullable<global::System.DateTime> ChangeDate) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ComplainID));
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(ComplainBy));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(ChangedBy));
             if ((OldStatus == null)) {
-                throw new global::System.ArgumentNullException("OldStatus");
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(OldStatus));
             }
             if ((NewStatus == null)) {
-                throw new global::System.ArgumentNullException("NewStatus");
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(NewStatus));
@@ -1077,17 +1115,17 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int ComplainID, int ComplainBy, string OldStatus, string NewStatus, global::System.Nullable<global::System.DateTime> ChangeDate, int Original_HistoryID, int Original_ComplainID, int Original_ComplainBy, string Original_OldStatus, string Original_NewStatus, global::System.Nullable<global::System.DateTime> Original_ChangeDate, int HistoryID) {
+        public virtual int Update(int ComplainID, int ChangedBy, string OldStatus, string NewStatus, global::System.Nullable<global::System.DateTime> ChangeDate, int Original_HistoryID, int Original_ComplainID, int Original_ChangedBy, string Original_OldStatus, string Original_NewStatus, global::System.Nullable<global::System.DateTime> Original_ChangeDate, int HistoryID) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(ComplainID));
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(ComplainBy));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(ChangedBy));
             if ((OldStatus == null)) {
-                throw new global::System.ArgumentNullException("OldStatus");
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(OldStatus));
             }
             if ((NewStatus == null)) {
-                throw new global::System.ArgumentNullException("NewStatus");
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(NewStatus));
@@ -1100,28 +1138,32 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
             }
             this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_HistoryID));
             this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_ComplainID));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_ComplainBy));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_ChangedBy));
             if ((Original_OldStatus == null)) {
-                throw new global::System.ArgumentNullException("Original_OldStatus");
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_OldStatus));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_OldStatus));
             }
             if ((Original_NewStatus == null)) {
-                throw new global::System.ArgumentNullException("Original_NewStatus");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_NewStatus));
-            }
-            if ((Original_ChangeDate.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((System.DateTime)(Original_ChangeDate.Value));
-            }
-            else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(HistoryID));
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_NewStatus));
+            }
+            if ((Original_ChangeDate.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((System.DateTime)(Original_ChangeDate.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(HistoryID));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1142,13 +1184,8 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int ComplainID, int ComplainBy, string OldStatus, string NewStatus, global::System.Nullable<global::System.DateTime> ChangeDate, int Original_HistoryID, int Original_ComplainID, int Original_ComplainBy, string Original_OldStatus, string Original_NewStatus, global::System.Nullable<global::System.DateTime> Original_ChangeDate) {
-            return this.Update(ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate, Original_HistoryID, Original_ComplainID, Original_ComplainBy, Original_OldStatus, Original_NewStatus, Original_ChangeDate, Original_HistoryID);
-        }
-
-        internal void Fill(object complainHistory)
-        {
-            throw new NotImplementedException();
+        public virtual int Update(int ComplainID, int ChangedBy, string OldStatus, string NewStatus, global::System.Nullable<global::System.DateTime> ChangeDate, int Original_HistoryID, int Original_ComplainID, int Original_ChangedBy, string Original_OldStatus, string Original_NewStatus, global::System.Nullable<global::System.DateTime> Original_ChangeDate) {
+            return this.Update(ComplainID, ChangedBy, OldStatus, NewStatus, ChangeDate, Original_HistoryID, Original_ComplainID, Original_ChangedBy, Original_OldStatus, Original_NewStatus, Original_ChangeDate, Original_HistoryID);
         }
     }
     
@@ -1243,7 +1280,7 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(ComplainManagementSystemDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(ComplainManagementSystemDataSet17 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._complainHistoryTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.ComplainHistory.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1262,7 +1299,7 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(ComplainManagementSystemDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(ComplainManagementSystemDataSet17 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._complainHistoryTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.ComplainHistory.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1280,7 +1317,7 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(ComplainManagementSystemDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(ComplainManagementSystemDataSet17 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._complainHistoryTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.ComplainHistory.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1322,7 +1359,7 @@ SELECT HistoryID, ComplainID, ComplainBy, OldStatus, NewStatus, ChangeDate FROM 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(ComplainManagementSystemDataSet dataSet) {
+        public virtual int UpdateAll(ComplainManagementSystemDataSet17 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
