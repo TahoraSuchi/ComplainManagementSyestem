@@ -25,6 +25,8 @@ namespace ComplainManagementSyestem
 
         private void ShowFeedback_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'complainManagementSystemDataSet10.Feedback' table. You can move, or remove it, as needed.
+            this.feedbackTableAdapter1.Fill(this.complainManagementSystemDataSet10.Feedback);
             LoadAllFeedback();
         }
 

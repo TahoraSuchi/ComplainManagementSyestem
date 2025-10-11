@@ -8,18 +8,19 @@ namespace ComplainManagementSyestem
 {
     public partial class AllComplain : Form
     {
-        string connectionString = ConfigurationManager.ConnectionStrings["UserDb"].ConnectionString;
+        private int currentUserId;
+        private string connectionString = ConfigurationManager.ConnectionStrings["UserDb"].ConnectionString;
 
-        public AllComplain()
+        public AllComplain(int userId)
         {
             InitializeComponent();
+            currentUserId = userId;
         }
 
         private void AllComplain_Load(object sender, EventArgs e)
         {
             LoadAllComplaints();
         }
-
 
         private void LoadAllComplaints()
         {
@@ -63,9 +64,7 @@ namespace ComplainManagementSyestem
                     da.Fill(dt);
 
                     if (dt.Rows.Count > 0)
-                    {
                         dataGridView1.DataSource = dt;
-                    }
                     else
                     {
                         MessageBox.Show("No complaint found with this Complain ID.");
@@ -79,7 +78,6 @@ namespace ComplainManagementSyestem
             }
         }
 
-
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
@@ -88,9 +86,60 @@ namespace ComplainManagementSyestem
 
         private void backbtn_Click(object sender, EventArgs e)
         {
-            AdminPage admin = new AdminPage();
-            admin.Show();
-            this.Hide();
+            if (currentUserId <= 0)
+            {
+                MessageBox.Show("Invalid User ID. Cannot determine role.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string roleQuery = "SELECT Role FROM [User] WHERE UserID = @userId";
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlCommand cmd = new SqlCommand(roleQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@userId", currentUserId);
+                    conn.Open();
+
+                    object roleObj = cmd.ExecuteScalar();
+
+                    if (roleObj == null)
+                    {
+                        MessageBox.Show("User ID not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    string role = roleObj.ToString();
+
+                    if (string.IsNullOrWhiteSpace(role))
+                    {
+                        MessageBox.Show("User role is not assigned.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    if (role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                    {
+                        AdminPage admin = new AdminPage(currentUserId);
+                        admin.Show();
+                        this.Hide();
+                    }
+                    else if (role.Equals("Police", StringComparison.OrdinalIgnoreCase))
+                    {
+                        PolicePage police = new PolicePage(currentUserId);
+                        police.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Unknown role: " + role, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error retrieving user role: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -102,18 +151,9 @@ namespace ComplainManagementSyestem
                     conn.Open();
 
                     string searchText = textBox1.Text.Trim();
-                    string query;
-
-                    if (string.IsNullOrEmpty(searchText))
-                    {
-                        // If search box is empty, load all complaints
-                        query = "SELECT * FROM Complain";
-                    }
-                    else
-                    {
-                        // Search only by ComplainID
-                        query = "SELECT * FROM Complain WHERE ComplainID LIKE @SearchText";
-                    }
+                    string query = string.IsNullOrEmpty(searchText)
+                        ? "SELECT * FROM Complain"
+                        : "SELECT * FROM Complain WHERE ComplainID LIKE @SearchText";
 
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@SearchText", "%" + searchText + "%");
@@ -130,8 +170,5 @@ namespace ComplainManagementSyestem
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-
     }
 }
-

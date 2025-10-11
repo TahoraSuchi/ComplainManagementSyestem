@@ -31,21 +31,26 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowFeedback));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.backbtn = new System.Windows.Forms.Button();
-            this.complainManagementSystemDataSet4 = new ComplainManagementSyestem.ComplainManagementSystemDataSet4();
-            this.feedbackBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.feedbackTableAdapter = new ComplainManagementSyestem.ComplainManagementSystemDataSet4TableAdapters.FeedbackTableAdapter();
             this.complainIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ratingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.commentsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.feedbackBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.complainManagementSystemDataSet4 = new ComplainManagementSyestem.ComplainManagementSystemDataSet4();
+            this.backbtn = new System.Windows.Forms.Button();
+            this.feedbackTableAdapter = new ComplainManagementSyestem.ComplainManagementSystemDataSet4TableAdapters.FeedbackTableAdapter();
             this.refreshbtn = new System.Windows.Forms.Button();
             this.searchbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.complainManagementSystemDataSet10 = new ComplainManagementSyestem.ComplainManagementSystemDataSet10();
+            this.feedbackBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.feedbackTableAdapter1 = new ComplainManagementSyestem.ComplainManagementSystemDataSet10TableAdapters.FeedbackTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.feedbackBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feedbackBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -57,38 +62,13 @@
             this.userIDDataGridViewTextBoxColumn,
             this.ratingDataGridViewTextBoxColumn,
             this.commentsDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.feedbackBindingSource;
+            this.dataGridView1.DataSource = this.feedbackBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(204, 118);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(618, 340);
+            this.dataGridView1.Size = new System.Drawing.Size(556, 340);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // backbtn
-            // 
-            this.backbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backbtn.BackgroundImage")));
-            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.backbtn.Location = new System.Drawing.Point(41, 29);
-            this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(50, 45);
-            this.backbtn.TabIndex = 1;
-            this.backbtn.UseVisualStyleBackColor = true;
-            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
-            // 
-            // complainManagementSystemDataSet4
-            // 
-            this.complainManagementSystemDataSet4.DataSetName = "ComplainManagementSystemDataSet4";
-            this.complainManagementSystemDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // feedbackBindingSource
-            // 
-            this.feedbackBindingSource.DataMember = "Feedback";
-            this.feedbackBindingSource.DataSource = this.complainManagementSystemDataSet4;
-            // 
-            // feedbackTableAdapter
-            // 
-            this.feedbackTableAdapter.ClearBeforeFill = true;
             // 
             // complainIDDataGridViewTextBoxColumn
             // 
@@ -121,6 +101,31 @@
             this.commentsDataGridViewTextBoxColumn.MinimumWidth = 10;
             this.commentsDataGridViewTextBoxColumn.Name = "commentsDataGridViewTextBoxColumn";
             this.commentsDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // feedbackBindingSource
+            // 
+            this.feedbackBindingSource.DataMember = "Feedback";
+            this.feedbackBindingSource.DataSource = this.complainManagementSystemDataSet4;
+            // 
+            // complainManagementSystemDataSet4
+            // 
+            this.complainManagementSystemDataSet4.DataSetName = "ComplainManagementSystemDataSet4";
+            this.complainManagementSystemDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // backbtn
+            // 
+            this.backbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backbtn.BackgroundImage")));
+            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.backbtn.Location = new System.Drawing.Point(41, 29);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(50, 45);
+            this.backbtn.TabIndex = 1;
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
+            // feedbackTableAdapter
+            // 
+            this.feedbackTableAdapter.ClearBeforeFill = true;
             // 
             // refreshbtn
             // 
@@ -159,6 +164,20 @@
             this.textBox1.Size = new System.Drawing.Size(180, 22);
             this.textBox1.TabIndex = 5;
             // 
+            // complainManagementSystemDataSet10
+            // 
+            this.complainManagementSystemDataSet10.DataSetName = "ComplainManagementSystemDataSet10";
+            this.complainManagementSystemDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // feedbackBindingSource1
+            // 
+            this.feedbackBindingSource1.DataMember = "Feedback";
+            this.feedbackBindingSource1.DataSource = this.complainManagementSystemDataSet10;
+            // 
+            // feedbackTableAdapter1
+            // 
+            this.feedbackTableAdapter1.ClearBeforeFill = true;
+            // 
             // ShowFeedback
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -177,8 +196,10 @@
             this.Text = "ShowFeedback";
             this.Load += new System.EventHandler(this.ShowFeedback_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.feedbackBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feedbackBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,5 +220,8 @@
         private System.Windows.Forms.Button searchbtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private ComplainManagementSystemDataSet10 complainManagementSystemDataSet10;
+        private System.Windows.Forms.BindingSource feedbackBindingSource1;
+        private ComplainManagementSystemDataSet10TableAdapters.FeedbackTableAdapter feedbackTableAdapter1;
     }
 }

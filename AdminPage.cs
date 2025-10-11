@@ -43,7 +43,7 @@ namespace ComplainManagementSyestem
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AllComplain allComplain = new AllComplain();
+            AllComplain allComplain = new AllComplain(loggedInUserId);
             allComplain.Show();
             this.Hide();
         }
@@ -64,7 +64,7 @@ namespace ComplainManagementSyestem
 
         private void button8_Click(object sender, EventArgs e)
         {
-            AllHistory allHistory = new AllHistory();
+            AllHistory allHistory = new AllHistory(loggedInUserId);
             allHistory.Show();
             this.Hide();
         }

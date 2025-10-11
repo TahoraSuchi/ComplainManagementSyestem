@@ -35,7 +35,6 @@
             this.userIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.submittedDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.currentStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.complainBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.complainManagementSystemDataSet2 = new ComplainManagementSyestem.ComplainManagementSystemDataSet2();
@@ -45,9 +44,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.searchbtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.complainManagementSystemDataSet7 = new ComplainManagementSyestem.ComplainManagementSystemDataSet7();
+            this.complainBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.complainTableAdapter1 = new ComplainManagementSyestem.ComplainManagementSystemDataSet7TableAdapters.ComplainTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // backbtn
@@ -69,14 +73,13 @@
             this.userIDDataGridViewTextBoxColumn,
             this.titleDataGridViewTextBoxColumn,
             this.descriptionDataGridViewTextBoxColumn,
-            this.submittedDateDataGridViewTextBoxColumn,
             this.currentStatusDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.complainBindingSource;
+            this.dataGridView1.DataSource = this.complainBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(107, 172);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(827, 425);
+            this.dataGridView1.Size = new System.Drawing.Size(742, 425);
             this.dataGridView1.TabIndex = 1;
             // 
             // complainIDDataGridViewTextBoxColumn
@@ -111,14 +114,6 @@
             this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
             this.descriptionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // submittedDateDataGridViewTextBoxColumn
-            // 
-            this.submittedDateDataGridViewTextBoxColumn.DataPropertyName = "SubmittedDate";
-            this.submittedDateDataGridViewTextBoxColumn.HeaderText = "SubmittedDate";
-            this.submittedDateDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.submittedDateDataGridViewTextBoxColumn.Name = "submittedDateDataGridViewTextBoxColumn";
-            this.submittedDateDataGridViewTextBoxColumn.Width = 125;
             // 
             // currentStatusDataGridViewTextBoxColumn
             // 
@@ -189,6 +184,20 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // complainManagementSystemDataSet7
+            // 
+            this.complainManagementSystemDataSet7.DataSetName = "ComplainManagementSystemDataSet7";
+            this.complainManagementSystemDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // complainBindingSource1
+            // 
+            this.complainBindingSource1.DataMember = "Complain";
+            this.complainBindingSource1.DataSource = this.complainManagementSystemDataSet7;
+            // 
+            // complainTableAdapter1
+            // 
+            this.complainTableAdapter1.ClearBeforeFill = true;
+            // 
             // AllComplain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -208,6 +217,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,12 +235,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn userIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn submittedDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn currentStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button searchbtn;
         private System.Windows.Forms.Button button1;
+        private ComplainManagementSystemDataSet7 complainManagementSystemDataSet7;
+        private System.Windows.Forms.BindingSource complainBindingSource1;
+        private ComplainManagementSystemDataSet7TableAdapters.ComplainTableAdapter complainTableAdapter1;
     }
 }

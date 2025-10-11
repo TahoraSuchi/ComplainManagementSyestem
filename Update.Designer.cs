@@ -38,17 +38,22 @@
             this.complainIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateCreatedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.currentStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.complainBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.complainManagementSystemDataSet14 = new ComplainManagementSyestem.ComplainManagementSystemDataSet14();
             this.complainBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.complainManagementSystemDataSet1 = new ComplainManagementSyestem.ComplainManagementSystemDataSet1();
             this.complainTableAdapter = new ComplainManagementSyestem.ComplainManagementSystemDataSet1TableAdapters.ComplainTableAdapter();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.complainTableAdapter1 = new ComplainManagementSyestem.ComplainManagementSystemDataSet14TableAdapters.ComplainTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -98,13 +103,15 @@
             this.complainIDDataGridViewTextBoxColumn,
             this.userIDDataGridViewTextBoxColumn,
             this.titleDataGridViewTextBoxColumn,
+            this.descriptionDataGridViewTextBoxColumn,
+            this.dateCreatedDataGridViewTextBoxColumn,
             this.currentStatusDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.complainBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 147);
+            this.dataGridView1.DataSource = this.complainBindingSource1;
+            this.dataGridView1.Location = new System.Drawing.Point(30, 140);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(651, 401);
+            this.dataGridView1.Size = new System.Drawing.Size(813, 401);
             this.dataGridView1.TabIndex = 4;
             // 
             // complainIDDataGridViewTextBoxColumn
@@ -132,6 +139,22 @@
             this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
             this.titleDataGridViewTextBoxColumn.Width = 125;
             // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            this.descriptionDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dateCreatedDataGridViewTextBoxColumn
+            // 
+            this.dateCreatedDataGridViewTextBoxColumn.DataPropertyName = "DateCreated";
+            this.dateCreatedDataGridViewTextBoxColumn.HeaderText = "DateCreated";
+            this.dateCreatedDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dateCreatedDataGridViewTextBoxColumn.Name = "dateCreatedDataGridViewTextBoxColumn";
+            this.dateCreatedDataGridViewTextBoxColumn.Width = 125;
+            // 
             // currentStatusDataGridViewTextBoxColumn
             // 
             this.currentStatusDataGridViewTextBoxColumn.DataPropertyName = "CurrentStatus";
@@ -140,15 +163,15 @@
             this.currentStatusDataGridViewTextBoxColumn.Name = "currentStatusDataGridViewTextBoxColumn";
             this.currentStatusDataGridViewTextBoxColumn.Width = 125;
             // 
-            // complainBindingSource
+            // complainBindingSource1
             // 
-            this.complainBindingSource.DataMember = "Complain";
-            this.complainBindingSource.DataSource = this.complainManagementSystemDataSet1;
+            this.complainBindingSource1.DataMember = "Complain";
+            this.complainBindingSource1.DataSource = this.complainManagementSystemDataSet14;
             // 
-            // complainManagementSystemDataSet1
+            // complainManagementSystemDataSet14
             // 
-            this.complainManagementSystemDataSet1.DataSetName = "ComplainManagementSystemDataSet1";
-            this.complainManagementSystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.complainManagementSystemDataSet14.DataSetName = "ComplainManagementSystemDataSet14";
+            this.complainManagementSystemDataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // complainTableAdapter
             // 
@@ -160,15 +183,15 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(714, 222);
+            this.label2.Location = new System.Drawing.Point(849, 160);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 16);
+            this.label2.Size = new System.Drawing.Size(84, 16);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Status";
+            this.label2.Text = "New Status";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(921, 275);
+            this.button3.Location = new System.Drawing.Point(1056, 213);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 7;
@@ -186,14 +209,14 @@
             "Resolve",
             "Closed",
             "Rejected"});
-            this.comboBox1.Location = new System.Drawing.Point(793, 222);
+            this.comboBox1.Location = new System.Drawing.Point(937, 159);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(203, 24);
             this.comboBox1.TabIndex = 8;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(812, 275);
+            this.button4.Location = new System.Drawing.Point(947, 213);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 9;
@@ -201,13 +224,17 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // complainTableAdapter1
+            // 
+            this.complainTableAdapter1.ClearBeforeFill = true;
+            // 
             // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1048, 597);
+            this.ClientSize = new System.Drawing.Size(1171, 597);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button3);
@@ -218,11 +245,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "Update";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update";
             this.Load += new System.EventHandler(this.Update_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.complainBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complainManagementSystemDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,16 +264,20 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private ComplainManagementSystemDataSet1 complainManagementSystemDataSet1;
         private System.Windows.Forms.BindingSource complainBindingSource;
         private ComplainManagementSystemDataSet1TableAdapters.ComplainTableAdapter complainTableAdapter;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button4;
+        private ComplainManagementSystemDataSet14 complainManagementSystemDataSet14;
+        private System.Windows.Forms.BindingSource complainBindingSource1;
+        private ComplainManagementSystemDataSet14TableAdapters.ComplainTableAdapter complainTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn complainIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn userIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateCreatedDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn currentStatusDataGridViewTextBoxColumn;
     }
 }

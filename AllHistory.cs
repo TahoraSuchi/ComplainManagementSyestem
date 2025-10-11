@@ -9,8 +9,7 @@ namespace ComplainManagementSyestem
     public partial class AllHistory : Form
     {
         private int loggedInUserID;
-        string connectionString = ConfigurationManager.ConnectionStrings["UserDb"].ConnectionString;
-
+        private string connectionString = ConfigurationManager.ConnectionStrings["UserDb"].ConnectionString;
 
         public AllHistory(int userId)
         {
@@ -18,16 +17,10 @@ namespace ComplainManagementSyestem
             loggedInUserID = userId;
         }
 
-        public AllHistory()
-        {
-            InitializeComponent();
-        }
-
         private void AllHistory_Load(object sender, EventArgs e)
         {
             LoadAllHistory();
         }
-
 
         private void LoadAllHistory()
         {
@@ -48,7 +41,6 @@ namespace ComplainManagementSyestem
             }
         }
 
-   
         private void searchbtn_Click(object sender, EventArgs e)
         {
             string complainId = textBox1.Text.Trim();
@@ -57,14 +49,13 @@ namespace ComplainManagementSyestem
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    string query;
-                    if (string.IsNullOrEmpty(complainId))
-                        query = "SELECT * FROM ComplainHistory ORDER BY ChangeDate DESC";
-                    else
-                        query = "SELECT * FROM ComplainHistory WHERE CAST(ComplainID AS NVARCHAR) = @ComplainID";
+                    string query = string.IsNullOrEmpty(complainId)
+                        ? "SELECT * FROM ComplainHistory ORDER BY ChangeDate DESC"
+                        : "SELECT * FROM ComplainHistory WHERE CAST(ComplainID AS NVARCHAR) = @ComplainID";
 
                     SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@ComplainID", complainId);
+                    if (!string.IsNullOrEmpty(complainId))
+                        cmd.Parameters.AddWithValue("@ComplainID", complainId);
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
@@ -78,20 +69,66 @@ namespace ComplainManagementSyestem
             }
         }
 
-   
         private void refreshbtn_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
             LoadAllHistory();
-          
         }
 
-     
         private void backbtn_Click(object sender, EventArgs e)
         {
-            AdminPage Admin = new AdminPage(loggedInUserID);
-            Admin.Show();
-            this.Hide();
+            if (loggedInUserID <= 0)
+            {
+                MessageBox.Show("Invalid User ID. Cannot determine role.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string roleQuery = "SELECT Role FROM [User] WHERE UserID = @userId";
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlCommand cmd = new SqlCommand(roleQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@userId", loggedInUserID);
+                    conn.Open();
+
+                    object roleObj = cmd.ExecuteScalar();
+                    if (roleObj == null)
+                    {
+                        MessageBox.Show("User ID not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    string role = roleObj.ToString();
+                    if (string.IsNullOrWhiteSpace(role))
+                    {
+                        MessageBox.Show("User role is not assigned.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    if (role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                    {
+                        AdminPage admin = new AdminPage(loggedInUserID);
+                        admin.Show();
+                        this.Hide();
+                    }
+                    else if (role.Equals("Police", StringComparison.OrdinalIgnoreCase))
+                    {
+                        PolicePage police = new PolicePage(loggedInUserID);
+                        police.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Unknown role: " + role, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error retrieving user role: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

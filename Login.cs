@@ -61,7 +61,7 @@ namespace ComplainManagementSyestem
 
                             else if (role == "Police")
                             {
-                                PolicePage PolicePage = new PolicePage();
+                                PolicePage PolicePage = new PolicePage(userId);
                                 PolicePage.Show();
                                 this.Hide();
                             }

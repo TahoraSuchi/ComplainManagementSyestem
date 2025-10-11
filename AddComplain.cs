@@ -34,7 +34,7 @@ namespace ComplainManagementSyestem
                 {
                     conn.Open();
 
-                    string query = @"INSERT INTO Complain (UserID, Title, Description, SubmittedDate, CurrentStatus) 
+                    string query = @"INSERT INTO Complain (UserID, Title, Description, DateCreated, CurrentStatus) 
                                      VALUES (@UserID, @Title, @Description, @DateCreated, @CurrentStatus)";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))

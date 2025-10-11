@@ -8,7 +8,7 @@ namespace ComplainManagementSyestem
 {
     public partial class Update : Form
     {
-        private int changedByUserId; 
+        private int changedByUserId;
 
         public Update(int userId)
         {
@@ -18,14 +18,57 @@ namespace ComplainManagementSyestem
 
         private void Update_Load(object sender, EventArgs e)
         {
-            this.complainTableAdapter.Fill(this.complainManagementSystemDataSet1.Complain);
+            LoadAllComplains();
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AdminPage admin = new AdminPage(changedByUserId);
-            admin.Show();
-            this.Hide();
+            string connectionString = ConfigurationManager.ConnectionStrings["UserDb"].ConnectionString;
+            string roleQuery = "SELECT Role FROM [User] WHERE UserID = @userId";
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlCommand cmd = new SqlCommand(roleQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@userId", changedByUserId);
+                    conn.Open();
+
+                    object roleObj = cmd.ExecuteScalar();
+
+                    if (roleObj != null)
+                    {
+                        string role = roleObj.ToString();
+
+                        if (role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                        {
+                            AdminPage admin = new AdminPage(changedByUserId);
+                            admin.Show();
+                        }
+                        else if (role.Equals("Police", StringComparison.OrdinalIgnoreCase))
+                        {
+                            PolicePage police = new PolicePage(changedByUserId);
+                            police.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Unknown role assigned to this user.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("User role not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error retrieving user role: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -137,11 +180,16 @@ namespace ComplainManagementSyestem
             }
         }
 
+ 
         private void button4_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
             comboBox1.SelectedIndex = -1;
+            LoadAllComplains();
+        }
 
+        private void LoadAllComplains()
+        {
             string connectionString = ConfigurationManager.ConnectionStrings["UserDb"].ConnectionString;
             string query = "SELECT * FROM Complain";
 

@@ -24,6 +24,10 @@ namespace ComplainManagementSyestem
 
         private void ComplainHistory_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'complainManagementSystemDataSet12.ComplainHistory' table. You can move, or remove it, as needed.
+            this.complainHistoryTableAdapter2.Fill(this.complainManagementSystemDataSet12.ComplainHistory);
+            // TODO: This line of code loads data into the 'complainManagementSystemDataSet9.ComplaintHistory' table. You can move, or remove it, as needed.
+            this.complaintHistoryTableAdapter.Fill(this.complainManagementSystemDataSet9.ComplaintHistory);
             LoadUserComplainHistory(); 
         }
 
