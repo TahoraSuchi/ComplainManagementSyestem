@@ -421,3 +421,12 @@ F:\Final\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.exe
 F:\Final\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.pdb
 F:\Final\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.ShowEvidence.resources
 F:\Final\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.ComplainForPolice.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.AddEvidence.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.AllComplain.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.AllHistory.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.AssignPolice.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.ComplainForPolice.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.ManageUser.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.Profile.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.ShowEvidence.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.ShowFeedback.resources
