@@ -33,9 +33,12 @@
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.label1 = new System.Windows.Forms.Label();
             this.labelUserName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+=======
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -103,13 +106,20 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+<<<<<<< HEAD
             this.pictureBox2.Location = new System.Drawing.Point(440, 99);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(348, 336);
+=======
+            this.pictureBox2.Location = new System.Drawing.Point(48, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(136, 122);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
+<<<<<<< HEAD
             // label1
             // 
             this.label1.AutoSize = true;
@@ -143,14 +153,19 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Welcome,";
             // 
+=======
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 496);
+<<<<<<< HEAD
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelUserName);
             this.Controls.Add(this.label1);
+=======
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -178,8 +193,11 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelUserName;
         private System.Windows.Forms.Label label2;
+=======
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
     }
 }

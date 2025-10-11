@@ -54,8 +54,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(157, 154);
+=======
+            this.label1.Location = new System.Drawing.Point(219, 144);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 16);
             this.label1.TabIndex = 3;
@@ -72,8 +76,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(157, 209);
+=======
+            this.label3.Location = new System.Drawing.Point(219, 199);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 7;
@@ -90,8 +98,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(157, 267);
+=======
+            this.label4.Location = new System.Drawing.Point(219, 257);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 16);
             this.label4.TabIndex = 9;
@@ -115,7 +127,11 @@
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< HEAD
             this.button2.Location = new System.Drawing.Point(395, 328);
+=======
+            this.button2.Location = new System.Drawing.Point(457, 318);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 12;
@@ -140,8 +156,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(643, 418);
             this.Controls.Add(this.label2);
+=======
+            this.ClientSize = new System.Drawing.Size(851, 519);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox4);

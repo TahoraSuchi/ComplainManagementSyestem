@@ -37,7 +37,10 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
+<<<<<<< HEAD
             this.label3 = new System.Windows.Forms.Label();
+=======
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.SuspendLayout();
             // 
             // backbtn
@@ -53,7 +56,11 @@
             // 
             // button1
             // 
+<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(393, 312);
+=======
+            this.button1.Location = new System.Drawing.Point(417, 319);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 11;
@@ -65,7 +72,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(171, 159);
+=======
+            this.label1.Location = new System.Drawing.Point(195, 166);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 16);
             this.label1.TabIndex = 12;
@@ -73,7 +84,11 @@
             // 
             // textBox1
             // 
+<<<<<<< HEAD
             this.textBox1.Location = new System.Drawing.Point(268, 159);
+=======
+            this.textBox1.Location = new System.Drawing.Point(292, 166);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 22);
             this.textBox1.TabIndex = 13;
@@ -82,7 +97,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(186, 228);
+=======
+            this.label2.Location = new System.Drawing.Point(210, 235);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 16);
             this.label2.TabIndex = 14;
@@ -94,7 +113,11 @@
             // 
             // button2
             // 
+<<<<<<< HEAD
             this.button2.Location = new System.Drawing.Point(482, 221);
+=======
+            this.button2.Location = new System.Drawing.Point(506, 228);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 15;
@@ -104,11 +127,16 @@
             // 
             // textBox2
             // 
+<<<<<<< HEAD
             this.textBox2.Location = new System.Drawing.Point(268, 221);
+=======
+            this.textBox2.Location = new System.Drawing.Point(292, 228);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(200, 22);
             this.textBox2.TabIndex = 16;
             // 
+<<<<<<< HEAD
             // label3
             // 
             this.label3.AutoSize = true;
@@ -120,14 +148,20 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Submit your evidence here.";
             // 
+=======
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             // AddEvidence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(742, 421);
             this.Controls.Add(this.label3);
+=======
+            this.ClientSize = new System.Drawing.Size(843, 549);
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
@@ -153,6 +187,9 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label3;
+=======
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
     }
 }

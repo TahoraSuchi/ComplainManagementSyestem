@@ -81,8 +81,13 @@ namespace ComplainManagementSyestem
         private void yesbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
+<<<<<<< HEAD
             UserPage userPage = new UserPage(loggedInUserID);
             userPage.Show();
+=======
+            AddEvidence AddEvidence = new AddEvidence(loggedInUserID);
+            AddEvidence.Show();
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
         }
     }
 }

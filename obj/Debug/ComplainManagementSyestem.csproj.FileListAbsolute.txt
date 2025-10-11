@@ -422,3 +422,15 @@ F:\Final\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.csproj.Co
 F:\Final\ComplainManagementSyestem\obj\Debug\Complain.483CE20B.Up2Date
 F:\Final\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.exe
 F:\Final\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.pdb
+<<<<<<< HEAD
+=======
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.AddEvidence.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.AllComplain.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.AllHistory.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.AssignPolice.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.ComplainForPolice.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.ManageUser.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.Profile.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.ShowEvidence.resources
+E:\ComplainManagementSyestem\obj\Debug\ComplainManagementSyestem.ShowFeedback.resources
+>>>>>>> deef24a4769cc2d457af0bfab6172eb674b70a6b
